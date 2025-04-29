@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - FoodLink Global</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Critical CSS inline -->
+    <style>
+        :root {
+            --golden: #C5A572;
+            --dark-golden: #B39461;
+            --dark-text: #333333;
+            --light-text: #FFFFFF;
+            --light-bg: #F5F5F5;
+            --dark-bg: #1A1A1A;
+        }
+        .hero-section {
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--light-text);
+        }
+        #navbar {
+            transition: all 0.3s ease-in-out;
+        }
+        .nav-scrolled {
+            background-color: var(--dark-bg) !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-transparent transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-2">
+                <div class="logo-container"><a href="index.html"><img src="images/foodlink_logo.png" alt="FoodLink Logo" class="h-10" fetchpriority="high"></a></div>
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-golden transition-colors">Home</a>
+                    <a href="about.html" class="text-white hover:text-golden transition-colors">About us</a>
+                    <a href="#business" class="text-white hover:text-golden transition-colors">Business</a>
+                    <a href="events.html" class="text-white hover:text-golden transition-colors">Events</a>
+                    <a href="community.html" class="text-white hover:text-golden transition-colors">Community</a>
+                    <a href="#newsroom" class="text-white hover:text-golden transition-colors">Newsroom</a>
+                    <a href="#careers" class="text-white hover:text-golden transition-colors">Careers</a>
+                    <a href="#contact" class="text-white hover:text-golden transition-colors">Contact us</a>
+                </div>
+                <button class="lg:hidden text-white block" id="mobile-menu-button" aria-label="Toggle menu" aria-expanded="false">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-backdrop hidden fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-500 opacity-0"></div>
+        <div class="mobile-menu hidden lg:hidden bg-white fixed top-0 right-0 h-full w-4/5 max-w-sm py-4 px-4 shadow-lg transform opacity-0 transition-all duration-500 z-50 overflow-y-auto">
+            <div class="container mx-auto">
+                <a href="index.html" class="block py-3 text-gray-800 hover:text-golden transition-colors border-b border-gray-100">Home</a>
+                <a href="about.html" class="block py-3 text-gray-800 hover:text-golden transition-colors border-b border-gray-100">About us</a>
+                <a href="#business" class="block py-3 text-gray-800 hover:text-golden transition-colors border-b border-gray-100">Business</a>
+                <a href="events.html" class="block py-3 text-gray-800 hover:text-golden transition-colors border-b border-gray-100">Events</a>
+                <a href="community.html" class="block py-3 text-gray-800 hover:text-golden transition-colors border-b border-gray-100">Community</a>
+                <a href="#newsroom" class="block py-3 text-gray-800 hover:text-golden transition-colors border-b border-gray-100">Newsroom</a>
+                <a href="#careers" class="block py-3 text-gray-800 hover:text-golden transition-colors border-b border-gray-100">Careers</a>
+                <a href="#contact" class="block py-3 text-gray-800 hover:text-golden transition-colors">Contact us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-screen relative flex items-center justify-center">
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted playsinline preload="metadata" poster="images/pexels-caio-56926.jpg">
+            <source src="Video/foodlinkmain.mp4" type="video/mp4">
+            <!-- Fallback background image if video doesn't load -->
+            <img src="images/pexels-caio-56926.jpg" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover">
+        </video>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center text-white" data-aos="fade-up">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Luxury Event Catering</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Description Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="event-intro mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold mb-6 leading-tight">
+                        <span class="text-6xl font-bold">F</span>oodlink Luxury Event Catering is the flagship division of the Foodlink Group, renowned for creating bespoke, luxurious, and unforgettable events.
+                    </h2>
+                </div>
+
+                <div class="event-description space-y-6" data-aos="fade-up" data-aos-delay="100">
+                    <p class="text-lg">
+                        We specialize in crafting highly tailored and imaginative experiences that are designed to leave a lasting impression.
+                    </p>
+
+                    <p class="text-lg">
+                        From intimate gatherings to grand banquets, our services are defined by exceptional culinary quality, world-class finesse, and impeccable attention to detail.
+                    </p>
+
+                    <p class="text-lg">
+                        At Foodlink, we understand that each client has unique expectations, which is why we take a personalized approach to every event.
+                    </p>
+
+                    <p class="text-lg">
+                        Our dedicated team works closely with you to ensure that every aspect of your event reflects your individual style, brand, and personality.
+                    </p>
+
+                    <p class="text-lg">
+                        Whether it's a corporate function, a wedding, or a sports event, we guide you through the entire process, ensuring that every detail is thoughtfully executed to perfection.
+                    </p>
+
+                    <p class="text-lg">
+                        With over two decades of experience, Foodlink has set new standards in the Indian catering industry by introducing internationally acclaimed chefs, precision-driven service, and ISO-certified quality standards.
+                    </p>
+
+                    <p class="text-lg">
+                        Our commitment to excellence has earned us numerous accolades, establishing us as a leader in luxury event catering.
+                    </p>
+
+                    <p class="text-lg">
+                        We are proud to offer more than just exceptional food – we create a seamless, elevated experience that reflects the highest standards of culinary artistry and service.
+                    </p>
+
+                    <p class="text-lg">
+                        To know more visit: <a href="http://www.foodlink.co" class="text-golden hover:underline" target="_blank">www.foodlink.co</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Offerings Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 inline-block bg-gray-200 py-2 px-6">Our Offerings</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Weddings Card -->
+                    <div class="offering-card bg-white relative overflow-hidden" data-aos="fade-up">
+                        <div class="offering-content p-8 flex flex-col justify-between h-full">
+                            <div class="offering-logo text-right mb-4">
+                                <img src="https://source.unsplash.com/random/200x100/?logo,wedding" alt="Foodlink Weddings" class="inline-block">
+                                <div class="text-center mt-2 font-semibold text-gray-600">WEDDINGS</div>
+                            </div>
+                            <div class="offering-text">
+                                <p class="text-gray-700 leading-relaxed">
+                                    Step into a realm of unparalleled luxury and culinary mastery with Foodlink Luxe, where every experience is crafted to transcend expectations and leave a lasting impression. Here's where we set the bar for meticulously curating unforgettable moments showcasing the culinary arts' finest nuances.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boutique Card -->
+                    <div class="offering-card relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://source.unsplash.com/random/800x600/?boutique,restaurant" alt="Foodlink Boutique" class="w-full h-full object-cover absolute inset-0">
+                        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                        <div class="offering-content p-8 relative z-10 flex flex-col justify-between h-full">
+                            <div class="offering-logo text-right mb-4">
+                                <img src="https://source.unsplash.com/random/200x100/?logo,boutique" alt="Foodlink Boutique" class="inline-block">
+                            </div>
+                            <div class="offering-text">
+                                <div class="border-l-2 border-white pl-4">
+                                    <p class="text-white leading-relaxed">
+                                        Step into a realm where intimate gatherings are infused with world-class sophistication. From casual brunches to Michelin-star dining, our tailored experiences ensure every detail is perfected with élan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Corporate Card -->
+                    <div class="offering-card relative overflow-hidden" data-aos="fade-up">
+                        <img src="https://source.unsplash.com/random/800x600/?corporate,event" alt="Foodlink Corporate" class="w-full h-full object-cover absolute inset-0" loading="lazy">
+                        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                        <div class="offering-content p-8 relative z-10 flex flex-col justify-between h-full">
+                            <div class="offering-logo text-right mb-4">
+                                <img src="https://source.unsplash.com/random/200x100/?logo,corporate" alt="Foodlink Corporate" class="inline-block" loading="lazy">
+                            </div>
+                            <div class="offering-text">
+                                <div class="border-l-2 border-white pl-4">
+                                    <p class="text-white leading-relaxed">
+                                        Foodlink Corporate is fashioned to prioritize value catering solutions, operational efficiency, reliability, and cordial hospitality. Our expert team curates tailor-made catering solutions that inspire creativity and foster collaboration, making every event a resounding success.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="arrow-icon absolute bottom-4 right-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sports Card -->
+                    <div class="offering-card relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://source.unsplash.com/random/800x600/?sports,event" alt="Foodlink Sports" class="w-full h-full object-cover absolute inset-0" loading="lazy">
+                        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                        <div class="offering-content p-8 relative z-10 flex flex-col justify-between h-full">
+                            <div class="offering-logo text-right mb-4">
+                                <img src="https://source.unsplash.com/random/200x100/?logo,sports" alt="Foodlink Sports" class="inline-block" loading="lazy">
+                            </div>
+                            <div class="offering-text">
+                                <div class="border-l-2 border-white pl-4">
+                                    <p class="text-white leading-relaxed">
+                                        At Foodlink Sport, we fashion tailor-made solutions to meet the unique dietary needs of athletes, as well as, effectively serve the diverse guests at large sporting events. Our paramount specialty is not just to offer the athletes fresh, nourishing, and delectable culinary choices, which play an instrumental role in sustaining optimal performance levels, but also to manage F&B solutions for high footfall spaces such as stadiums and sports arenas.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="arrow-icon absolute bottom-4 right-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="statistics-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Stat 1 -->
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-icon-container mx-auto mb-4">
+                        <img src="images/culinary-icon.png" alt="Culinary Expertise" class="stat-icon" loading="lazy" onerror="this.src='https://via.placeholder.com/80/f5f0e5/C5A572?text=20+'">
+                    </div>
+                    <div class="stat-number text-4xl font-bold text-golden mb-2">20+</div>
+                    <div class="stat-text text-gray-700">Years of culinary<br>expertise</div>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon-container mx-auto mb-4">
+                        <img src="images/guests-icon.png" alt="Guests Catered" class="stat-icon" loading="lazy" onerror="this.src='https://via.placeholder.com/80/f5f0e5/C5A572?text=40k+'">
+                    </div>
+                    <div class="stat-number text-4xl font-bold text-golden mb-2">40,000+</div>
+                    <div class="stat-text text-gray-700">guests catered in a single<br>event</div>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon-container mx-auto mb-4">
+                        <img src="images/countries-icon.png" alt="Countries" class="stat-icon" loading="lazy" onerror="this.src='https://via.placeholder.com/80/f5f0e5/C5A572?text=30+'">
+                    </div>
+                    <div class="stat-number text-4xl font-bold text-golden mb-2">30+</div>
+                    <div class="stat-text text-gray-700">countries where<br>successful destination<br>events have been<br>executed</div>
+                </div>
+
+                <!-- Stat 4 -->
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon-container mx-auto mb-4">
+                        <img src="images/alliances-icon.png" alt="Alliances" class="stat-icon" loading="lazy" onerror="this.src='https://via.placeholder.com/80/f5f0e5/C5A572?text=500+'">
+                    </div>
+                    <div class="stat-number text-4xl font-bold text-golden mb-2">500+</div>
+                    <div class="stat-text text-gray-700">Alliances with world's<br>top chefs & food<br>design experts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards-section py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="awards-section-header text-center">
+                <h2 class="text-3xl font-bold mb-2">Recognitions - Catering</h2>
+                <p class="text-lg text-gray-600 mb-8">Our commitment to excellence has earned us numerous accolades in the industry</p>
+            </div>
+            <div class="awards-grid max-w-7xl mx-auto">
+                <!-- Award 1 -->
+                <div class="award-card" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/random/800x600/?award,trophy,gold" alt="GIWA Awards" class="award-image" loading="lazy">
+                    <div class="award-overlay">
+                        <h3 class="award-title">GIWA Awards: 2020-2023</h3>
+                        <div class="award-details">
+                            <p class="award-description">Best Food & Art Display</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="award-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://source.unsplash.com/random/800x600/?award,asia,ceremony" alt="WOW Awards Asia" class="award-image" loading="lazy">
+                    <div class="award-overlay">
+                        <h3 class="award-title">WOW Awards Asia 2020-2023</h3>
+                        <div class="award-details">
+                            <p class="award-description">Achievement in Catering</p>
+                            <p class="award-description">F&B Experience Concept: Design Presentation for a Social Event</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="award-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://source.unsplash.com/random/800x600/?award,food,guide" alt="Times Food Guide Awards" class="award-image" loading="lazy">
+                    <div class="award-overlay">
+                        <h3 class="award-title">Times Food Guide Awards</h3>
+                        <div class="award-details">
+                            <p class="award-description">4 Times Winner - Best Caterer of the year</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 4 -->
+                <div class="award-card" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/random/800x600/?wedding,food,luxury" alt="Weddingsutra Influencer Awards" class="award-image" loading="lazy">
+                    <div class="award-overlay">
+                        <h3 class="award-title">Weddingsutra Influencer Awards</h3>
+                        <div class="award-details">
+                            <p class="award-description">2021 - Winner Trendsetting Food Design</p>
+                            <p class="award-description">2022-WinnerTrendsetting Food Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 5 -->
+                <div class="award-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://source.unsplash.com/random/800x600/?food,award,india" alt="Food Connoisseurs India Awards" class="award-image" loading="lazy">
+                    <div class="award-overlay">
+                        <h3 class="award-title">Food Connoisseurs India Awards</h3>
+                        <div class="award-details">
+                            <p class="award-description">2021- Best Caterer of the year</p>
+                            <p class="award-description">2022-BestCatereroftheyear</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 6 -->
+                <div class="award-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://source.unsplash.com/random/800x600/?medal,brand,award" alt="Prestigious Brand Awards" class="award-image" loading="lazy">
+                    <div class="award-overlay">
+                        <h3 class="award-title">Prestigious Brand Awards</h3>
+                        <div class="award-details">
+                            <p class="award-description">2022 - Brand of the Decade</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 7 -->
+                <div class="award-card" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/random/800x600/?global,award,trophy" alt="EMF Global Networks 2023" class="award-image" loading="lazy">
+                    <div class="award-overlay">
+                        <h3 class="award-title">EMF Global Networks 2023</h3>
+                        <div class="award-details">
+                            <p class="award-description">The Iconic Venue of the Year</p>
+                            <p class="award-description">Best Catering Company of the Year</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 8 -->
+                <div class="award-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://source.unsplash.com/random/800x600/?global,catering,award" alt="SIWPC Global 2023" class="award-image" loading="lazy">
+                    <div class="award-overlay">
+                        <h3 class="award-title">SIWPC Global 2023</h3>
+                        <div class="award-details">
+                            <p class="award-description">Best Catering Company India</p>
+                            <p class="award-description">Best Catering Company - International Destination</p>
+                            <p class="award-description">Best CSR Project</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 9 -->
+                <div class="award-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://source.unsplash.com/random/800x600/?award,gold,trophy" alt="EMF ACE Award 2024" class="award-image" loading="lazy">
+                    <div class="award-overlay">
+                        <h3 class="award-title">EMF ACE Award 2024</h3>
+                        <div class="award-details">
+                            <p class="award-description">Best Catering Company of the year</p>
+                            <p class="award-description">Gold & Silver</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container w-full bg-white border-t border-gray-200 pt-24 md:pt-10 pb-14 px-4 md:px-0 text-[13px]">
+      <div class="max-w-7xl px-4 mx-auto flex flex-col md:flex-row gap-8">
+        <!-- Left: Columns (all in one row, compact) -->
+        <div class="flex-1 flex flex-col md:flex-row justify-between flex-wrap gap-6 md:gap-10">
+          <!-- About Us -->
+          <div>
+            <h4 class="font-bold mb-1 text-xs md:text-sm" style="color:var(--dark-bg)">About Us</h4>
+            <ul class="text-gray-700 !space-y-[4px] mt-4">
+              <li>Evolution</li>
+              <li>Conception</li>
+
+              <li>Footprint</li>
+              <li>Vision and Mission</li>
+              <li>Value Framework</li>
+              <li>Our Founder</li>
+              <li>Leadership</li>
+              <li>Infrastructure</li>
+              <li>Safety</li>
+            </ul>
+          </div>
+          <!-- Business -->
+          <div>
+            <h4 class="font-bold mb-1 text-xs md:text-sm" style="color:var(--dark-bg)">Business</h4>
+            <ul class="text-gray-700 !space-y-[4px] mt-4">
+              <li>Luxury Event Catering</li>
+              <li>Luxury Banquets and Conventions</li>
+              <li>Restaurants and Cloud Kitchens</li>
+              <li>Integrated F&amp;B Services</li>
+            </ul>
+          </div>
+          <!-- Investor -->
+          <div>
+            <h4 class="font-bold mb-1 text-xs md:text-sm" style="color:var(--dark-bg)">Investor</h4>
+            <ul class="text-gray-700 !space-y-[4px] mt-4">
+              <li>Our Investors</li>
+              <li>Financials Results</li>
+              <li>Policies &amp; Codes</li>
+              <li>Shareholding Patterns</li>
+              <li>Stock Exchange Filings</li>
+              <li>Board Meetings</li>
+              <li>General Meetings</li>
+              <li>Annual Reports</li>
+              <li>Annual Return</li>
+              <li>IPO Documents</li>
+              <li>Board of Directors</li>
+              <li>Investor Grievance</li>
+            </ul>
+          </div>
+          <!-- Newsroom -->
+          <div>
+            <h4 class="font-bold mb-1 text-xs md:text-sm" style="color:var(--dark-bg)">Newsroom</h4>
+            <ul class="text-gray-700 !space-y-[4px] mt-4">
+              <li>Media Releases</li>
+              <li>Social Media</li>
+              <li>Media Library</li>
+            </ul>
+          </div>
+          <!-- Community (in same row) -->
+          <div>
+            <h4 class="font-bold mb-1 text-xs md:text-sm" style="color:var(--dark-bg)">Community</h4>
+            <ul class="text-gray-700 !space-y-[4px] mt-4">
+              <li>Environment</li>
+              <li>Social Responsibility</li>
+              <li>Food Safety</li>
+              <li>Empowerment</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Divider & Right -->
+        <div class="flex flex-col md:flex-row items-center md:items-stretch gap-0 md:gap-0">
+          <!-- Divider -->
+          <div class="hidden md:block border-l border-gray-300 mx-8"></div>
+          <!-- Right: Links, Social, Newsletter, Logo -->
+          <div class="flex flex-col justify-between h-full min-w-[220px] w-full md:w-auto py-4 md:py-0 flex-1 md:max-w-xs">
+            <!-- Top: Links -->
+            <div class="flex flex-col gap-1 mb-4 md:mb-8">
+              <a href="#" class="font-bold text-xs md:text-sm text-[var(--dark-bg)]">Careers</a>
+              <a href="#" class="font-bold text-xs md:text-sm text-[var(--dark-bg)]">Contact Us</a>
+              <a href="privacy-policy.html" class="font-bold text-xs md:text-sm text-[var(--dark-bg)]">Privacy Policy</a>
+              <a href="terms-conditions.html" class="font-bold text-xs md:text-sm text-[var(--dark-bg)]">Terms & Conditions</a>
+              <a href="disclaimer.html" class="font-bold text-xs md:text-sm text-[var(--dark-bg)]">Disclaimer</a>
+              <a href="cookies-policy.html" class="font-bold text-xs md:text-sm text-[var(--dark-bg)]">Cookies Policy</a>
+            </div>
+            <!-- Center: Social & Newsletter -->
+            <div class="flex flex-col gap-3 mb-4">
+              <div class="flex items-center gap-4">
+                <a href="#" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in text-3xl"></i>
+                </a>
+                <a href="#" aria-label="YouTube">
+                  <i class="fa-brands fa-youtube text-3xl"></i>
+                </a>
+              </div>
+
+            </div>
+            <!-- Bottom: Logo -->
+            <div class="w-full flex justify-start mt-10 -ml-3.5">
+              <img src="images/Home page/logos/food-link-big.png" alt="Food &amp; Link" class="h-12 md:h-14 object-contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script>
+        // Initialize AOS after it loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    once: true,
+                    offset: 100
+                });
+            }
+        });
+    </script>
+    <script src="main.js" defer></script>
+</body>
+</html>

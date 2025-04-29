@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodLink Global</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/timeline-slider.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Hero Section (Direct MP4 Video) -->
+    <section
+      class="hero-section h-[25vh] md:h-screen relative overflow-hidden flex items-center justify-center"
+    >
+      <!-- Direct MP4 Video Player with Custom Controls -->
+      <div class="w-full h-full relative">
+        <video
+          id="hero-video"
+          class="w-full h-full object-cover object-center"
+          autoplay
+          loop
+          playsinline
+          muted
+          src="https://adilo.bigcommand.com/c5b3896f-27fa-4113-9d66-310a2baeb2a2.mp4"
+          poster="images/Home page/slide 01.jpg"
+          preload="auto"
+        ></video>
+
+        <!-- Custom Video Controls -->
+        <div
+          class="absolute bottom-2 md:bottom-8 right-2 md:right-8 flex items-center space-x-4 z-10"
+        >
+          <!-- Volume Control Button -->
+          <button
+            id="video-mute-button"
+            class="bg-black bg-opacity-50 hover:bg-opacity-70 rounded-full p-1 md:p-3 transition-all duration-300"
+          >
+            <svg
+              id="volume-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 md:h-8 md:w-8 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
+                clip-rule="evenodd"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Custom Play/Pause Button (Center) -->
+        <button
+          id="video-play-button"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 md:p-6 transition-all duration-300 z-10 shadow-lg"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 md:h-16 md:w-16 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Dual Carousel Section -->
+    <section class="pb-14 pt-16 dual-carousel-section">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <!-- Image Gallery Carousel -->
+          <div
+            class="gallery-carousel-container lg:col-span-5 min-h-[450px] glow-shadow relative"
+            style="overflow: visible"
+          >
+            <div
+              class="news-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
+            >
+              <h2 class="text-xl font-semibold tracking-wide">ABOUT US</h2>
+            </div>
+            <div class="gallery-carousel">
+              <!-- Gallery Item 1 -->
+              <div class="gallery-item relative">
+                <div class="w-[200px] absolute top-3 left-3">
+                  <img
+                    src="images/Home page/logos/food-link-small.png"
+                    alt="small-logo"
+                    class="w-full h-auto"
+                    loading="lazy"
+                  />
+                </div>
+                <img
+                  src="images/Home page/jade 1.jpg"
+                  alt="Venue"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Gallery Item 2 -->
+              <div class="gallery-item relative">
+                <div class="w-[200px] absolute top-3 left-3">
+                  <img
+                    src="images/Home page/logos/food-link-small.png"
+                    alt="small-logo"
+                    class="w-full h-auto"
+                    loading="lazy"
+                  />
+                </div>
+                <img
+                  src="images/Home page/jade 2.jpg"
+                  alt="Restaurant"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Gallery Item 3 -->
+              <div class="gallery-item relative">
+                <div class="w-[200px] absolute top-3 left-3">
+                  <img
+                    src="images/Home page/logos/food-link-small.png"
+                    alt="small-logo"
+                    class="w-full h-auto"
+                    loading="lazy"
+                  />
+                </div>
+                <img
+                  src="images/Home page/jade 3.jpg"
+                  alt="Catering Event"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div
+              class="carousel-controls absolute bottom-4 left-[50%] -translate-x-1/2 lg:-translate-x-0 lg:left-8 mt-4"
+            >
+              <button
+                class="hidden lg:flex gallery-prev-btn bg-gray-200 hover:bg-gray-300 rounded-full opacity-0 w-10 h-10 items-center justify-center"
+                aria-label="Previous slide"
+              ></button>
+              <div class="carousel-dots gallery-dots"></div>
+              <button
+                class="hidden lg:flex gallery-next-btn bg-gray-200 hover:bg-gray-300 rounded-full opacity-0 w-10 h-10 items-center justify-center"
+                aria-label="Next slide"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Text Over Image Carousel -->
+          <div
+            class="text-image-carousel-container min-h-[450px] lg:col-span-7 glow-shadow"
+            style="overflow: visible"
+          >
+            <div
+              class="news-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
+            >
+              <h2 class="text-xl font-semibold tracking-wide">BUSINESS</h2>
+            </div>
+            <div class="text-image-carousel">
+              <!-- Text-Image Item 0  -->
+              <div class="text-image-item">
+                <div
+                  class="z-10 flex flex-col justify-center items-start gap-4 absolute top-1/2 -translate-y-[45%] left-3 z-10"
+                >
+                  <h3 class="text-xl uppercase text-white pl-4">BUSINESS</h3>
+                  <div class="p-4 text-white max-w-[80%]">
+                    <h2
+                      class="text-3xl mt-3 mb-4 font-medium leading-tight !text-white"
+                    >
+                      Four Verticals <br />
+                      One Culinary Vision
+                    </h2>
+                    <p
+                      class="p-3 pt-0 text-base leading-relaxed text-[var(--light-text)] opacity-80 relative"
+                    >
+                      From orchestrating luxury catering to managing premier
+                      banquet venues, crafting elevated dining experiences to
+                      delivering seamless F&B operations—our four verticals
+                      unite under one purpose: to create unforgettable culinary
+                      journeys with grace, precision, and flair.
+                      <span
+                        class="absolute h-[90%] w-[2px] bg-[var(--dark-golden)] top-1/2 -translate-y-1/2 left-0"
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src="images/Home page/business-slide-banner.jpg"
+                  alt="Catering Services"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Text-Image Item 1 -->
+              <div class="text-image-item">
+                <div
+                  class="text-image-content text-center flex items-center justify-center z-10"
+                >
+                  <div class="w-[300px]">
+                    <img
+                      src="images/business-overview/logos/1.png"
+                      alt="small-logo"
+                      class="w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <img
+                  src="images/Home page/slide 03.jpg"
+                  alt="Catering Services"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Text-Image Item 2 -->
+              <div class="text-image-item">
+                <div
+                  class="text-image-content text-center flex items-center justify-center z-10"
+                >
+                  <div class="w-[300px]">
+                    <img
+                      src="images/business-overview/logos/2.png"
+                      alt="small-logo"
+                      class="w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <img
+                  src="images/Home page/slide 01.jpg"
+                  alt="Culinary Excellence"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <!-- Text-Image Item 3 -->
+              <div class="text-image-item">
+                <div
+                  class="text-image-content text-center flex items-center justify-center z-10"
+                >
+                  <div class="w-[300px]">
+                    <img
+                      src="images/business-overview/logos/3.png"
+                      alt="small-logo"
+                      class="w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <img
+                  src="images/business-overview/card-bg/3.jpeg"
+                  alt="Culinary Excellence"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <!-- Text-Image Item 4 -->
+              <div class="text-image-item">
+                <div
+                  class="text-image-content text-center flex items-center justify-center z-10"
+                >
+                  <div class="w-[300px]">
+                    <img
+                      src="images/business-overview/logos/4.png"
+                      alt="small-logo"
+                      class="w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <img
+                  src="images/business-overview/card-bg/4.jpeg"
+                  alt="Culinary Excellence"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="carousel-dots text-image-dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News and community Section -->
+    <section class="pb-16 bg-light-bg">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8">
+          <!-- News Carousel -->
+          <div class="lg:col-span-8 relative">
+            <div
+              class="news-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
+            >
+              <h2 class="text-xl font-semibold tracking-wide">NEWSROOM</h2>
+            </div>
+            <div class="news-carousel-container glow-shadow">
+              <div class="news-carousel bg-white">
+                <!-- News Item 1 -->
+
+                <div
+                  class="news-item md:grid-cols-[1.2fr,1fr] w-full gap-1 h-full"
+                >
+                  <div class="w-full">
+                    <div class="news-image !h-full">
+                      <img
+                        src="images/Home page/press release 1.jpg"
+                        alt="Elegant Dining Setup"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full p-6 md:pt-8 flex flex-col">
+                    <div class="news-content">
+                      <div class="relative mb-6">
+                        <span
+                          class="text-[#C5873B] font-medium text-base uppercase tracking-wider"
+                          >PRESS RELEASE</span
+                        >
+                        <div
+                          class="triangle absolute top-1/2 -translate-y-1/2 right-[107%]"
+                        ></div>
+                      </div>
+
+                      <h3 class="text-xl mt-3 mb-4 font-medium leading-tight">
+                        Foodlink F&B Holdings Pvt. Ltd. Forays into the heart of
+                        India
+                      </h3>
+                      <p
+                        class="text-gray-700 pl-3 pb-3 text-base leading-relaxed"
+                      >
+                        Launches its high-end Luxury Catering services in New
+                        Delhi with Gourmet Cuisines, Experiential Offerings,
+                        Global alliances with the world's best food design and
+                        impact companies, and Bespoke catering solutions for
+                        wedding, corporate, and government events.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- News Item 2 -->
+
+                <div
+                  class="news-item md:grid-cols-[1.2fr,1fr] w-full gap-1 h-full"
+                >
+                  <div class="w-full">
+                    <div class="news-image !h-full">
+                      <img
+                        src="images/Home page/chairman.jpg"
+                        alt="Elegant Dining Setup"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full p-6 md:pt-8 flex flex-col">
+                    <div class="news-content">
+                      <div class="relative mb-6">
+                        <span
+                          class="text-[#C5873B] font-medium text-base uppercase tracking-wider"
+                          >CHAIRMAN</span
+                        >
+                        <div
+                          class="triangle absolute top-1/2 -translate-y-1/2 right-[107%]"
+                        ></div>
+                      </div>
+
+                      <h3 class="text-xl mt-3 mb-4 font-medium leading-tight">
+                        Sanjay Vazirani
+                      </h3>
+                      <p
+                        class="text-gray-700 pl-3 pb-3 text-base leading-relaxed"
+                      >
+                        Sanjay Vazirani is a first-generation visionary
+                        entrepreneur and a trailblazer in the global hospitality
+                        industry. As the Founder and Chairman of Foodlink Group,
+                        he has redefined luxury dining and created a legacy of
+                        world-class catering and unparalleled culinary
+                        experiences.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- News Item 3 -->
+
+                <div
+                  class="news-item md:grid-cols-[1.2fr,1fr] w-full gap-1 h-full"
+                >
+                  <div class="w-full">
+                    <div class="news-image !h-full">
+                      <img
+                        src="images/Home page/press release 2.jpg"
+                        alt="Elegant Dining Setup"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full p-6 md:pt-8 flex flex-col">
+                    <div class="news-content">
+                      <div class="relative mb-6">
+                        <span
+                          class="text-[#C5873B] font-medium text-base uppercase tracking-wider"
+                          >PRESS RELEASE</span
+                        >
+                        <div
+                          class="triangle absolute top-1/2 -translate-y-1/2 right-[107%]"
+                        ></div>
+                      </div>
+
+                      <h3 class="text-xl mt-3 mb-4 font-medium leading-tight">
+                        FoodLink given the mandate of Exclusive Culinary Partner
+                        for IICC, Yshobhoomi in Dwarka
+                      </h3>
+                      <p
+                        class="text-gray-700 pl-3 pb-3 text-base leading-relaxed"
+                      >
+                        Pan India, 17th May 2024: In a significant development
+                        for culinary aficionados and event enthusiasts alike,
+                        Foodlink has been declared as the integrated F&B service
+                        partner for the prestigious Indian International
+                        Convention Centre/Yashobhoomi, located in Dwarka.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="carousel-controls absolute bottom-4 left-[50%] -translate-x-1/2 lg:-translate-x-0 lg:left-28 mt-4"
+              >
+                <button
+                  class="hidden lg:flex prev-btn bg-gray-200 hover:bg-gray-300 rounded-full opacity-0 w-10 h-10 items-center justify-center"
+                  aria-label="Previous slide"
+                ></button>
+                <div class="carousel-dots"></div>
+                <button
+                  class="hidden lg:flex next-btn bg-gray-200 hover:bg-gray-300 rounded-full opacity-0 w-10 h-10 items-center justify-center"
+                  aria-label="Next slide"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Community Section -->
+          <div class="lg:col-span-4 relative">
+            <div
+              class="community-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
+            >
+              <h2 class="text-lg font-semibold tracking-wide">COMMUNITY</h2>
+            </div>
+            <div class="glow-shadow bg-white h-full min-h-[450px]">
+              <div class="community-content !h-full fact-item">
+                <img
+                  src="images/Home page/community/1.jpeg"
+                  alt="Community Team"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="community-content !h-full fact-item">
+                <img
+                  src="images/Home page/community/2.jpg"
+                  alt="Community Team"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="community-content !h-full fact-item">
+                <img
+                  src="images/Home page/community/3.JPG"
+                  alt="Community Team"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="community-content !h-full fact-item">
+                <img
+                  src="images/Home page/community/4.jpg"
+                  alt="Community Team"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partial:index.partial.html -->
+    <div class="timeline-container !min-h-screen">
+      <div class="timeline">
+        <div class="swiper-container !min-h-screen">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url('images/Home page/timelines/2003.jpg');
+              "
+              data-year="2003"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">2003</span>
+                <h4 class="timeline-title">Founding Year</h4>
+                <p class="timeline-text">
+                  Flagship Business of Luxury Catering Launched
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url('images/Home page/timelines/2012.JPG');
+              "
+              data-year="2012"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">2012</span>
+                <h4 class="timeline-title">Catering Expansion in Ahmedabad</h4>
+                <p class="timeline-text">
+                  Restaurant Business Launched with China Bistro & India Bistro
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url('images/Home page/timelines/2016.png');
+              "
+              data-year="2016"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">2016</span>
+                <h4 class="timeline-title">
+                  Launched Gastro Pub brand Glocal Junction
+                </h4>
+                <p class="timeline-text">
+                  Launched Jade Luxury Banquets, Mumbai <br />
+                  Won F&B mandate for Nehru Centre, Mumbai
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url('images/Home page/timelines/2017.png');
+              "
+              data-year="2017"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">2017</span>
+                <h4 class="timeline-title">Catering Expansion in Chandigarh</h4>
+                <p class="timeline-text"></p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url('images/Home page/timelines/2021.png');
+              "
+              data-year="2021"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">2021</span>
+                <h4 class="timeline-title">
+                  Catering & Restaurants Expansion in UAE
+                </h4>
+                <p class="timeline-text">
+                  Cloud Kitchen Brand ‘Art Of Dum’ Launched <br />
+                  Launched Jade Luxury Banquets, Ahmedabad
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url('images/Home page/timelines/2022.png');
+              "
+              data-year="2022"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">2022</span>
+                <h4 class="timeline-title">Catering Expansion in Delhi</h4>
+                <p class="timeline-text"></p>
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url('images/Home page/timelines/2023.png');
+              "
+              data-year="2023"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">2023</span>
+                <h4 class="timeline-title">Catering Expansion in Hyderabad</h4>
+                <p class="timeline-text">
+                  Won F&B Mandate for IICC (Yashobhoomi), Delhi
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url('images/Home page/timelines/2025.png');
+              "
+              data-year="2025"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">2025</span>
+                <h4 class="timeline-title">
+                  Restaurant Expansion across UAE, UK & Canada
+                </h4>
+                <p class="timeline-text">
+                  Catering Expansion in UK <br />
+                  Empanelled as a Premier Catering Partner at the NSCI Dome
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- careers and employees section -->
+    <section class="mt-16 py-16 bg-gray-100 min-h-screen">
+      <div class="container mx-auto px-4 h-full">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 md:min-h-[750px] h-full gap-8"
+        >
+          <!-- careers -->
+          <div class="lg:col-span-4 h-full glow-shadow relative">
+            <div
+              class="news-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
+            >
+              <h2 class="text-xl font-semibold tracking-wide">CAREERS</h2>
+            </div>
+
+            <div class="grid h-full">
+              <div class="w-full">
+                <div class="news-image !h-full md:min-h-[340px]">
+                  <img
+                    src="images/Home page/careers-card-banner.png"
+                    alt="Elegant Dining Setup"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div class="w-full p-6 md:pt-8 flex flex-col">
+                <div class="news-content">
+                  <div class="relative mb-8">
+                    <span
+                      class="text-[#C5873B] font-medium text-base uppercase tracking-wider"
+                      >CAREERS</span
+                    >
+                    <div
+                      class="triangle absolute bottom-[165%] -translate-y-1/2 rotate-90"
+                    ></div>
+                  </div>
+
+                  <h3 class="text-xl mt-3 mb-4 font-medium leading-tight">
+                    Beware of Fraudulent Recruiting!
+                  </h3>
+                  <p
+                    class="text-gray-700 p-3 pl-8 pt-0 text-base leading-relaxed relative"
+                  >
+                    We have been made aware that some individuals have recently
+                    received fraudulent emails, phone calls, or other
+                    communications claiming to offer job opportunities at
+                    Foodlink Group.
+                    <span
+                      class="absolute h-[90%] w-[2px] bg-[var(--dark-golden)] top-1/2 -translate-y-1/2 left-4"
+                    ></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute right-3 bottom-3">
+              <a href="/careers.html" class="btn-primary">
+                <img src="images/arrow-right.png" class="w-9" alt="arrow" />
+              </a>
+            </div>
+          </div>
+
+          <!-- employees and numbers-->
+          <div class="lg:col-span-8 grid grid-rows-[1.2fr,1fr] h-full gap-8">
+            <!-- employees card -->
+            <div
+              class="row-span-1 glow-shadow relative flex flex-col justify-center items-start gap-6 px-4 md:px-8"
+              style="
+                background-image: url('images/Home page/for-employees-banner-card.jpg');
+                background-size: cover;
+              "
+            >
+              <div class="absolute inset-0 bg-black/30"></div>
+              <div class="z-10 flex flex-col justify-center items-start gap-6">
+                <h3 class="text-xl uppercase text-white">FOR EMPLOYEES</h3>
+                <div class="p-4 bg-[var(--dark-bg)] text-white max-w-[500px]">
+                  <h2
+                    class="text-3xl mt-3 mb-4 font-medium leading-tight !text-white"
+                  >
+                    Empowering Growth, Innovation, and Success
+                  </h2>
+                  <p
+                    class="p-3 pt-0 text-base leading-relaxed text-[var(--light-text)] opacity-80 relative"
+                  >
+                    At Foodlink, we are committed to fostering an environment
+                    where every employee has the opportunity to thrive and reach
+                    their full potential.
+                    <span
+                      class="absolute h-[90%] w-[2px] bg-[var(--dark-golden)] top-1/2 -translate-y-1/2 left-0"
+                    ></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- numbers and join card-->
+
+            <div class="row-span-1 grid md:grid-cols-2 gap-8">
+              <div
+                class="glow-shadow relative p-6 flex flex-col gap-4 justify-start items-center"
+              >
+                <div class="relative mb-8">
+                  <span
+                    class="text-[#C5873B] text-base font-semibold uppercase tracking-wider"
+                    >IN NUMBERS</span
+                  >
+                </div>
+
+                <div class="flex flex-col gap-4 justify-start items-center">
+                  <div class="">
+                    <img src="images/people.png" class="w-20" alt="arrow" />
+                  </div>
+                  <p
+                    class="text-[#C5873B] font-medium text-5xl font-weight-600"
+                  >
+                    1500
+                  </p>
+                  <p>Employees and growing</p>
+                </div>
+              </div>
+
+              <div
+                class="glow-shadow bg-[var(--pure-golden)] relative flex flex-col items-start justify-center p-6 lg:pl-8 text-white bg-opacity-60"
+              >
+                <h3
+                  class="text-2xl mt-3 mb-4 leading-tight pr-4 font-semibold -translate-y-5 uppercase"
+                >
+                  Featured Jobs
+                </h3>
+                <div class="pl-6 w-full -translate-y-3">
+                  <div
+                    class="p-3 pt-0 text-base leading-relaxed w-full relative"
+                  >
+                    <span>Assistant L&D Manager</span><br />
+                    <span class="italic text-xs">Mumbai, India</span>
+                    <span
+                      class="absolute h-[90%] w-[2px] bg-[var(--light-bg)] top-1/2 -translate-y-1/2 left-0"
+                    ></span>
+                  </div>
+                  <div
+                    class="p-3 pt-0 mt-3 text-base leading-relaxed w-full relative"
+                  >
+                    <span>F&B Executive</span><br />
+                    <span class="italic text-xs">Mumbai, India</span>
+                    <span
+                      class="absolute h-[90%] w-[2px] bg-[var(--light-bg)] top-1/2 -translate-y-1/2 left-0"
+                    ></span>
+                  </div>
+                </div>
+
+                <div class="absolute right-3 bottom-3">
+                  <a href="/careers.html" class="btn-primary">
+                    <img
+                      src="images/arrow-white-right.png"
+                      class="w-9"
+                      alt="arrow"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- last gallery section -->
+    <section class="bg-[var(--dark-bg)] w-screen min-h-screen relative">
+      <div
+        class="h-[85vh] w-full flex items-center justify-start px-4 md:px-8 md:pl-12 relative gallery-canvas"
+      >
+        <div class="w-full h-full absolute top-0 left-0 gallery-bg">
+          <img
+            src="images/Home page/slide 01.jpg"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="absolute w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.6)] to-transparent inset-0"
+        ></div>
+
+        <div class="w-full container mx-auto px-4 relative z-20">
+          <div class="z-20 max-w-[350px] w-full flex flex-col gap-4">
+            <button
+              class="px-6 py-2.5 text-[var(--dark-golden)] bg-[var(--dark-bg)] uppercase w-fit"
+            >
+              OUR BRANDS
+            </button>
+            <!-- <div class="w-full gallery-logo -translate-x-4">
+              <img
+                src="images/Home page/gallery/logo/1.png"
+                class="w-full"
+                alt="big-logo-content"
+              />
+            </div> -->
+            <!-- <button
+              class="text-white bg-[var(--pure-golden)] bg-opacity-60 px-6 w-fit py-2.5 flex items-center gap-4 justify-center"
+            >
+              View All <span class="text-2xl">→</span>
+            </button> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="image-button-slider-container container -translate-y-10">
+        <button
+          class="slider-prev-btn absolute z-30 top-1/2 -translate-y-1/2 left-1"
+          aria-label="Previous slide"
+        >
+          ❮
+        </button>
+        <button
+          class="slider-next-btn absolute right-6 z-30 top-1/2 -translate-y-1/2"
+          aria-label="Next slide"
+        >
+          ❯
+        </button>
+
+        <div class="image-button-slider w-[98%] mx-auto overflow-x-hidden">
+          <!-- Slider Item 1 -->
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/1.jpg"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/2.JPG"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/3.jpg"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/4.JPG"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/5.jpg"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/6.jpeg"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/7.jpg"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/8.jpg"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/9.jpg"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="images/Home page/gallery/bg/10.jpg"
+                alt="Wedding Catering"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Control Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const video = document.getElementById('hero-video');
+        const playButton = document.getElementById('video-play-button');
+        const muteButton = document.getElementById('video-mute-button');
+        const volumeIcon = document.getElementById('volume-icon');
+
+        // Toggle play/pause when button is clicked
+        playButton.addEventListener('click', function () {
+          if (video.paused) {
+            video.play();
+            video.muted = false; // Unmute when user clicks play
+            updateVolumeIcon(); // Update the volume icon
+            playButton.style.opacity = '0'; // Hide button when playing
+            setTimeout(() => {
+              playButton.style.display = 'none';
+            }, 300);
+          } else {
+            video.pause();
+            playButton.style.display = 'block';
+            playButton.style.opacity = '1';
+          }
+        });
+
+        // Toggle mute/unmute when volume button is clicked
+        muteButton.addEventListener('click', function () {
+          video.muted = !video.muted;
+          updateVolumeIcon();
+        });
+
+        // Update volume icon based on mute state
+        function updateVolumeIcon() {
+          if (video.muted) {
+            volumeIcon.innerHTML = `
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                `;
+          } else {
+            volumeIcon.innerHTML = `
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728" />
+                `;
+          }
+        }
+
+        // Show button when video is paused
+        video.addEventListener('pause', function () {
+          playButton.style.display = 'block';
+          setTimeout(() => {
+            playButton.style.opacity = '1';
+          }, 10);
+        });
+
+        // Hide button when video is playing
+        video.addEventListener('play', function () {
+          playButton.style.opacity = '0';
+          setTimeout(() => {
+            playButton.style.display = 'none';
+          }, 300);
+        });
+
+        // Initialize volume icon
+        updateVolumeIcon();
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script>
+      // Initialize AOS after it loads
+      document.addEventListener('DOMContentLoaded', function () {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            once: true,
+            offset: 100,
+          });
+        }
+      });
+    </script>
+    <script src="main.js" type="module" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+  </body>
+</html>

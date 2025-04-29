@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Footprints - FoodLink Global</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Hero Section -->
+    <section
+      class="hero-section h-[25vh] md:h-screen relative overflow-hidden flex items-center justify-center"
+    >
+      <!-- Direct MP4 Video Player with Custom Controls -->
+      <div class="w-full h-full relative">
+        <video
+          id="hero-video"
+          class="w-full h-full object-cover object-center"
+          autoplay
+          loop
+          playsinline
+          muted
+          src="https://adilo.bigcommand.com/8145fcc7-30a1-4b3e-ba4f-8043c28072dd.mp4"
+          poster="images/Home page/slide 01.jpg"
+          preload="auto"
+        ></video>
+      </div>
+
+      <div
+        class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0"
+      ></div>
+
+      <!-- Hero Info Box -->
+      <div
+        class="hero-info-box absolute top-1/2 right-[5%] transform -translate-y-1/2 text-right z-20 pl-8"
+      >
+        <div class="info-block mb-6">
+          <div
+            class="info-title font-bold text-white text-base md:text-lg tracking-wide"
+            style="letter-spacing: 0.02em"
+          >
+            GLOBAL HEADQUARTERS
+          </div>
+          <div class="info-desc text-[var(--light-gray)] text-sm md:text-base">
+            Dubai
+          </div>
+        </div>
+        <div class="info-block mb-6">
+          <div
+            class="info-title font-bold text-white text-base md:text-lg tracking-wide"
+          >
+            INDIA HEADQUARTERS
+          </div>
+          <div class="info-desc text-[var(--light-gray)] text-sm md:text-base">
+            Mumbai
+          </div>
+        </div>
+        <div class="info-block mb-6">
+          <div
+            class="info-title font-bold text-white text-base md:text-lg tracking-wide"
+          >
+            REGIONAL OFFICES &amp; CENTRAL KITCHENS
+          </div>
+          <div class="info-desc text-[var(--light-gray)] text-sm md:text-base">
+            Delhi, Ahmedabad, Hyderabad,<br />Bangalore, Chandigarh &amp; Dubai
+          </div>
+        </div>
+        <div class="info-block">
+          <div
+            class="info-title font-bold text-white text-base md:text-lg tracking-wide"
+          >
+            INTERNATIONAL WAREHOUSES
+          </div>
+          <div class="info-desc text-[var(--light-gray)] text-sm md:text-base">
+            Turkey &amp; Italy
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main section -->
+    <main class="w-full pb-0 pt-0 min-h-screen">
+      <div class="w-full">
+        <section class="py-10 bg-[var(--light-gray)]">
+          <div class="container mx-auto px-4 mb-5">
+            <div class="grid gap-6 place-items-center">
+              <div class="w-full text-center">
+                <h1
+                  class="text-3xl font-semibold relative text-[var(--dark-golden)] inline"
+                >
+                  <span class="text-[var(--dark-text)]">Our Footprint</span>
+                  <span
+                    class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"
+                  ></span>
+                </h1>
+              </div>
+              <p class="canvas-desc">
+                Pioneering the Future of Experiential Gastronomy in India​
+              </p>
+              <div
+                class="max-w-[300px] w-full grid grid-cols-2 overflow-hidden toggle-btns-container"
+              >
+                <button
+                  class="toggle-btn-active toggle-btn rounded-l-lg"
+                  data-target="india"
+                >
+                  India
+                </button>
+                <button
+                  class="toggle-btn-inactive toggle-btn rounded-r-lg"
+                  data-target="global"
+                >
+                  Global
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="mt-12 max-w-[900px] p-7 w-full rounded-2xl bg-white map-canvas mx-auto"
+            >
+              <div
+                class="rounded-xl border overflow-hidden border-[var(--dark-text)] overflow-hidden"
+              >
+                <img
+                  src="images/about/Indian & global footprint/India Footprint map.png"
+                  class="w-full h-full"
+                  alt="Indian Footprint"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module">
+      document.addEventListener('DOMContentLoaded', () => {
+        function togglingBtns(toggleBtnsContainerSelector, callback) {
+          const toggleBtnsContainer = document.querySelector(
+            toggleBtnsContainerSelector
+          );
+          const toggleBtns =
+            toggleBtnsContainer.querySelectorAll('.toggle-btn');
+          toggleBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const activeBtn =
+                toggleBtnsContainer.querySelector('.toggle-btn-active');
+
+              if (!(activeBtn.textContent === btn.textContent)) {
+                if (activeBtn) {
+                  activeBtn.classList.remove('toggle-btn-active');
+                }
+                activeBtn.classList.add('toggle-btn-inactive');
+
+                btn.classList.remove('toggle-btn-inactive');
+                btn.classList.add('toggle-btn-active');
+
+                callback(activeBtn, btn);
+              }
+            });
+          });
+        }
+
+        function ourFootPrintHandling() {
+          togglingBtns('.toggle-btns-container', (activeBtn, currBtn) => {
+            const mapCanvas = document.querySelector('.map-canvas');
+            if (currBtn.dataset.target === 'india') {
+              mapCanvas.querySelector('img').src =
+                'images/about/Indian & global footprint/India Footprint map.png';
+              mapCanvas.querySelector('img').alt = 'Indian footprint map';
+              document.querySelector('.canvas-desc').textContent =
+                'Pioneering the Future of Experiential Gastronomy in India';
+            } else if (currBtn.dataset.target === 'global') {
+              mapCanvas.querySelector('img').src =
+                'images/about/Indian & global footprint/global footprint.png';
+              mapCanvas.querySelector('img').alt = 'Global footprint map';
+              document.querySelector('.canvas-desc').textContent =
+                'Globally Recognized In Experiential Gastronomy';
+            }
+          });
+        }
+
+        ourFootPrintHandling();
+      });
+    </script>
+    <script src="main.js" type="module" defer></script>
+  </body>
+</html>

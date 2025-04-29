@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evolution - FoodLink Global</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/timeline-slider.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+    />
+    <link rel="stylesheet" href="styles/timeline-slider.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <style>
+        .swiper-item-slide {
+  position: relative;
+  /* your existing slide styles */
+}
+
+.swiper-item-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1; /* Make sure it's under your content, but above the background */
+  pointer-events: none;
+  /* Tailwind gradient equivalent in CSS: */
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+}
+.swiper-item-slide > * {
+  position: relative;
+  z-index: 2;
+  font-family: "Playfair Display", serif;
+  font-weight:600;
+}
+
+.swiper-item-slide .timeline-text{
+    font-size: 32px!important;
+}
+
+.swiper-item-slide .timeline-year{
+    margin-bottom: 1rem!important;
+    font-weight: bold!important;
+}
+@media screen and (min-width: 1024px) {
+    .swiper-item-slide .swiper-slide-content{
+        width: 55%!important;
+        right: 20%!important;
+    }
+}
+
+    </style>
+
+  </head>
+  <body class="overflow-x-hidden">
+
+    <main class="w-full min-h-screen">
+        <section id="timeline-pin" class="w-full relative">
+            <!-- timeline -->
+            <div class="timeline-container !h-screen" style="padding-top: 0; margin-top: -1px; padding-bottom: 0; height:100vh;">
+              <div class="timeline ">
+                <div class="swiper-container !h-screen relative">
+                    
+                  <div class="swiper-wrapper">
+                    <div
+                    class="swiper-slide swiper-item-slide"
+                    style="
+                      background-image: url('images/evolution/evolution-banner.png');
+                    "
+                  
+                  >
+                  
+                    <div class="swiper-slide-content">
+                      <!-- <span class="timeline-year">2003</span> -->
+                      <h4 class="timeline-title">Evolution</h4>
+                      <p class="timeline-text">
+                        
+Glimpses Of The Past, A Window Into The Future
+                      </p>
+                    </div>
+                  </div>
+
+                    <div
+                      class="swiper-slide swiper-item-slide"
+                      style="
+                        background-image: url('images/Home page/timelines/2003.jpg');
+                      "
+                      data-year="2003"
+                    >
+                    
+                      <div class="swiper-slide-content">
+                        <span class="timeline-year">2003</span>
+                        <h4 class="timeline-title">Founding Year</h4>
+                        <p class="timeline-text">
+                          Flagship Business of Luxury Catering Launched
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-item-slide"
+                      style="
+                        background-image: url('images/Home page/timelines/2012.JPG');
+                      "
+                      data-year="2012"
+                    >
+                      <div class="swiper-slide-content">
+                        <span class="timeline-year">2012</span>
+                        <h4 class="timeline-title">
+                          Catering Expansion in Ahmedabad
+                        </h4>
+                        <p class="timeline-text">
+                          Restaurant Business Launched with China Bistro & India
+                          Bistro
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-item-slide"
+                      style="
+                        background-image: url('images/Home page/timelines/2016.png');
+                      "
+                      data-year="2016"
+                    >
+                      <div class="swiper-slide-content">
+                        <span class="timeline-year">2016</span>
+                        <h4 class="timeline-title">
+                          Launched Gastro Pub brand Glocal Junction
+                        </h4>
+                        <p class="timeline-text">
+                          Launched Jade Luxury Banquets, Mumbai <br />
+                          Won F&B mandate for Nehru Centre, Mumbai
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-item-slide"
+                      style="
+                        background-image: url('images/Home page/timelines/2017.png');
+                      "
+                      data-year="2017"
+                    >
+                      <div class="swiper-slide-content">
+                        <span class="timeline-year">2017</span>
+                        <h4 class="timeline-title">
+                          Catering Expansion in Chandigarh
+                        </h4>
+                        <p class="timeline-text"></p>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-item-slide"
+                      style="
+                        background-image: url('images/Home page/timelines/2021.png');
+                      "
+                      data-year="2021"
+                    >
+                      <div class="swiper-slide-content">
+                        <span class="timeline-year">2021</span>
+                        <h4 class="timeline-title">
+                          Catering & Restaurants Expansion in UAE
+                        </h4>
+                        <p class="timeline-text">
+                          Cloud Kitchen Brand ‘Art Of Dum’ Launched <br />
+                          Launched Jade Luxury Banquets, Ahmedabad
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-item-slide"
+                      style="
+                        background-image: url('images/Home page/timelines/2022.png');
+                      "
+                      data-year="2022"
+                    >
+                      <div class="swiper-slide-content">
+                        <span class="timeline-year">2022</span>
+                        <h4 class="timeline-title">Catering Expansion in Delhi</h4>
+                        <p class="timeline-text"></p>
+                      </div>
+                    </div>
+    
+                    <div
+                      class="swiper-slide swiper-item-slide"
+                      style="
+                        background-image: url('images/Home page/timelines/2023.png');
+                      "
+                      data-year="2023"
+                    >
+                      <div class="swiper-slide-content">
+                        <span class="timeline-year">2023</span>
+                        <h4 class="timeline-title">
+                          Catering Expansion in Hyderabad
+                        </h4>
+                        <p class="timeline-text">
+                          Won F&B Mandate for IICC (Yashobhoomi), Delhi
+                        </p>
+                      </div>
+                    </div>
+    
+                    <div
+                      class="swiper-slide swiper-item-slide"
+                      style="
+                        background-image: url('images/Home page/timelines/2025.png');
+                      "
+                      data-year="2025"
+                    >
+                      <div class="swiper-slide-content">
+                        <span class="timeline-year">2025</span>
+                        <h4 class="timeline-title">
+                          Restaurant Expansion across UAE, UK & Canada
+                        </h4>
+                        <p class="timeline-text">
+                          Catering Expansion in UK <br />
+                          Empanelled as a Premier Catering Partner at the NSCI Dome
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+<!-- 
+                  <div class="swiper-button-prev md:hidden"></div>
+                  <div class="swiper-button-next md:hidden"></div> -->
+                  <div class="swiper-pagination pointer-events-none cursor-default"></div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    
+
+
+
+    <script src="main.js" type="module" defer></script>
+    <script>
+      // Unified script for Swiper, GSAP ScrollTrigger, and scroll-triggered next/prev
+      document.addEventListener('DOMContentLoaded', function() {
+        // Swiper initialization
+        if (!window.swiper) {
+            console.log('running');
+            
+          var container = document.querySelector('.swiper-container');
+          if (container && window.Swiper) {
+            window.swiper = new Swiper('.timeline .swiper-container', {
+    direction: 'vertical',
+    loop: false,
+    speed: 1600,
+    pagination: '.swiper-pagination',
+    paginationBulletRender: function (swiper, index, className) {
+      var year = document
+        .querySelectorAll('.swiper-slide')
+        [index].getAttribute('data-year')||'';
+      
+      const paginationContainer=document.querySelector('.swiper-pagination');
+      if(!year){
+        paginationContainer.classList.add('invisible');   
+      }else{
+        if(paginationContainer.classList.contains('invisible')){
+          paginationContainer.classList.remove('invisible');
+        }
+      }
+      return '<span class="' + className + '">' + year + '</span>';
+    },
+    paginationClickable: false,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    breakpoints: {
+      768: {
+        direction: 'horizontal',
+      },
+    },
+  });
+          
+          }
+        }
+        
+        var timelineContainer = document.querySelector('.timeline-container');
+        if (timelineContainer) {
+          timelineContainer.classList.add('!h-screen');
+          timelineContainer.style.height = '100vh';
+        }
+        const slides = document.querySelectorAll('.swiper-item-slide');
+        const numSlides = slides.length;
+        // GSAP ScrollTrigger for pinning and syncing slides
+        gsap.registerPlugin(ScrollTrigger);
+        ScrollTrigger.create({
+          trigger: ".timeline-container",
+          start: "top top",
+          end: () => "+=" + (window.innerHeight * (numSlides - 1)),
+          pin: true,
+          scrub: true,
+          anticipatePin: 1,
+          onUpdate: self => {
+            const progress = self.progress;
+            const newIndex = Math.round(progress * (numSlides - 1));
+            if (window.swiper && window.swiper.activeIndex !== newIndex) {
+              window.swiper.slideTo(newIndex);
+            }
+          }
+        });
+        // Optional: If you want to trigger next/prev on scroll past half viewport (legacy behavior)
+        let lastScrollY = window.scrollY;
+        let triggeredNext = false;
+        let triggeredPrev = false;
+        function handleScroll() {
+          const scrollY = window.scrollY;
+          const halfViewport = window.innerHeight / 2;
+          if (scrollY > lastScrollY) {
+            // Scrolling down
+            if (scrollY > halfViewport && !triggeredNext) {
+              triggeredNext = true;
+              triggeredPrev = false;
+              const btn = document.querySelector('.swiper-button-next');
+              if(btn) btn.click();
+            }
+          } else {
+            // Scrolling up
+            if (scrollY < halfViewport && !triggeredPrev) {
+              triggeredPrev = true;
+              triggeredNext = false;
+              const btn = document.querySelector('.swiper-button-prev');
+              if(btn) btn.click();
+            }
+          }
+          lastScrollY = scrollY;
+        }
+        window.addEventListener('scroll', handleScroll);
+      });
+    </script>
+  
+
+   
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+  </body>
+</html>
