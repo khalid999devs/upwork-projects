@@ -29,6 +29,10 @@ dist
 /build
 build
 
+public/images
+/public/images
+/public/images/*
+
 # OS-specific
 .DS_Store
 Thumbs.db
