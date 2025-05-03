@@ -36,6 +36,9 @@
     <section
       class="hero-section h-[25vh] md:h-screen relative overflow-hidden flex items-center justify-center"
     >
+    <div
+    class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0 z-20"
+  ></div>
       <!-- Direct MP4 Video Player with Custom Controls -->
       <div class="w-full h-full relative">
         <video
@@ -57,7 +60,7 @@
           <!-- Volume Control Button -->
           <button
             id="video-mute-button"
-            class="bg-black bg-opacity-50 hover:bg-opacity-70 rounded-full p-1 md:p-3 transition-all duration-300"
+            class="bg-black bg-opacity-50 hidden hover:bg-opacity-70 rounded-full p-1 md:p-3 transition-all duration-300"
           >
             <svg
               id="volume-icon"
@@ -87,7 +90,7 @@
         <!-- Custom Play/Pause Button (Center) -->
         <button
           id="video-play-button"
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 md:p-6 transition-all duration-300 z-10 shadow-lg"
+          class="absolute hidden top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 md:p-6 transition-all duration-300 z-10 shadow-lg"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -116,57 +119,42 @@
             class="gallery-carousel-container lg:col-span-5 min-h-[450px] glow-shadow relative"
             style="overflow: visible"
           >
-            <div
-              class="news-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
-            >
+            <div class="headingDiv">
               <h2 class="text-xl font-semibold tracking-wide">ABOUT US</h2>
             </div>
             <div class="gallery-carousel">
               <!-- Gallery Item 1 -->
               <div class="gallery-item relative">
                 <div class="w-[200px] absolute top-3 left-3">
-                  <img
-                    src="images/Home page/logos/food-link-small.png"
-                    alt="small-logo"
-                    class="w-full h-auto"
-                    loading="lazy"
-                  />
                 </div>
                 <img
-                  src="images/Home page/jade 1.jpg"
+                  src="images/Home page/chairman.jpg"
                   alt="Venue"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <!-- Gallery Item 2 -->
               <div class="gallery-item relative">
                 <div class="w-[200px] absolute top-3 left-3">
-                  <img
+                  <!-- <img
                     src="images/Home page/logos/food-link-small.png"
                     alt="small-logo"
                     class="w-full h-auto"
                     loading="lazy"
-                  />
+                  /> -->
                 </div>
                 <img
-                  src="images/Home page/jade 2.jpg"
-                  alt="Restaurant"
+                  src="images/Home page/business-ab.png"
+                  alt="Venue"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <!-- Gallery Item 3 -->
+
               <div class="gallery-item relative">
                 <div class="w-[200px] absolute top-3 left-3">
-                  <img
-                    src="images/Home page/logos/food-link-small.png"
-                    alt="small-logo"
-                    class="w-full h-auto"
-                    loading="lazy"
-                  />
                 </div>
                 <img
-                  src="images/Home page/jade 3.jpg"
-                  alt="Catering Event"
+                  src="images/Home page/kitchen.jpg"
+                  alt="Venue"
                   class="w-full h-full object-cover"
                 />
               </div>
@@ -191,18 +179,15 @@
             class="text-image-carousel-container min-h-[450px] lg:col-span-7 glow-shadow"
             style="overflow: visible"
           >
-            <div
-              class="news-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
-            >
+            <div class="headingDiv">
               <h2 class="text-xl font-semibold tracking-wide">BUSINESS</h2>
             </div>
             <div class="text-image-carousel">
               <!-- Text-Image Item 0  -->
               <div class="text-image-item">
                 <div
-                  class="z-10 flex flex-col justify-center items-start gap-4 absolute top-1/2 -translate-y-[45%] left-3 z-10"
+                  class="flex flex-col justify-center items-start gap-4 absolute top-1/2 -translate-y-[50%] left-3 z-10"
                 >
-                  <h3 class="text-xl uppercase text-white pl-4">BUSINESS</h3>
                   <div class="p-4 text-white max-w-[80%]">
                     <h2
                       class="text-3xl mt-3 mb-4 font-medium leading-tight !text-white"
@@ -230,12 +215,33 @@
                   class="w-full h-full object-cover"
                 />
               </div>
+              <!-- Text-Image Item 2 -->
+              <div class="text-image-item">
+                <div
+                  class="text-image-content text-center flex items-center justify-center z-10"
+                >
+                  <div class="w-[300px] p-4 inset-0 bg-black/60">
+                    <img
+                      src="images/business-overview/logos/2.png"
+                      alt="small-logo"
+                      class="w-[95%] mx-auto h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <img
+                  src="images/Home page/slide 01.jpg"
+                  alt="Culinary Excellence"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
               <!-- Text-Image Item 1 -->
               <div class="text-image-item">
                 <div
                   class="text-image-content text-center flex items-center justify-center z-10"
                 >
-                  <div class="w-[300px]">
+                  <div class="w-[300px] p-4 inset-0 bg-black/60">
                     <img
                       src="images/business-overview/logos/1.png"
                       alt="small-logo"
@@ -250,54 +256,13 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <!-- Text-Image Item 2 -->
-              <div class="text-image-item">
-                <div
-                  class="text-image-content text-center flex items-center justify-center z-10"
-                >
-                  <div class="w-[300px]">
-                    <img
-                      src="images/business-overview/logos/2.png"
-                      alt="small-logo"
-                      class="w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <img
-                  src="images/Home page/slide 01.jpg"
-                  alt="Culinary Excellence"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-
-              <!-- Text-Image Item 3 -->
-              <div class="text-image-item">
-                <div
-                  class="text-image-content text-center flex items-center justify-center z-10"
-                >
-                  <div class="w-[300px]">
-                    <img
-                      src="images/business-overview/logos/3.png"
-                      alt="small-logo"
-                      class="w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <img
-                  src="images/business-overview/card-bg/3.jpeg"
-                  alt="Culinary Excellence"
-                  class="w-full h-full object-cover"
-                />
-              </div>
 
               <!-- Text-Image Item 4 -->
               <div class="text-image-item">
                 <div
                   class="text-image-content text-center flex items-center justify-center z-10"
                 >
-                  <div class="w-[300px]">
+                  <div class="w-[300px] p-4 inset-0 bg-black/60">
                     <img
                       src="images/business-overview/logos/4.png"
                       alt="small-logo"
@@ -308,6 +273,27 @@
                 </div>
                 <img
                   src="images/business-overview/card-bg/4.jpeg"
+                  alt="Culinary Excellence"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <!-- Text-Image Item 3 -->
+              <div class="text-image-item">
+                <div
+                  class="text-image-content text-center flex items-center justify-center z-10"
+                >
+                  <div class="w-[300px] p-4 inset-0 bg-black/60">
+                    <img
+                      src="images/business-overview/logos/3.png"
+                      alt="small-logo"
+                      class="w-[80%] mx-auto h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <img
+                  src="images/business-overview/card-bg/3.jpeg"
                   alt="Culinary Excellence"
                   class="w-full h-full object-cover"
                 />
@@ -325,12 +311,10 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8">
           <!-- News Carousel -->
           <div class="lg:col-span-8 relative">
-            <div
-              class="news-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
-            >
+            <div class="headingDiv">
               <h2 class="text-xl font-semibold tracking-wide">NEWSROOM</h2>
             </div>
-            <div class="news-carousel-container glow-shadow">
+            <div class="news-carousel-container glow-shadow max-h-[450px]">
               <div class="news-carousel bg-white">
                 <!-- News Item 1 -->
 
@@ -340,7 +324,7 @@
                   <div class="w-full">
                     <div class="news-image !h-full">
                       <img
-                        src="images/Home page/press release 1.jpg"
+                        src="images/Home page/press release 1.png"
                         alt="Elegant Dining Setup"
                         class="w-full h-full object-cover"
                       />
@@ -359,7 +343,7 @@
                       </div>
 
                       <h3 class="text-xl mt-3 mb-4 font-medium leading-tight">
-                        Foodlink F&B Holdings Pvt. Ltd. Forays into the heart of
+                        Foodlink F&B Holdings India Ltd. Forays into the heart of
                         India
                       </h3>
                       <p
@@ -377,7 +361,7 @@
 
                 <!-- News Item 2 -->
 
-                <div
+                <!-- <div
                   class="news-item md:grid-cols-[1.2fr,1fr] w-full gap-1 h-full"
                 >
                   <div class="w-full">
@@ -416,7 +400,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
                 <!-- News Item 3 -->
 
@@ -446,16 +430,16 @@
 
                       <h3 class="text-xl mt-3 mb-4 font-medium leading-tight">
                         FoodLink given the mandate of Exclusive Culinary Partner
-                        for IICC, Yshobhoomi in Dwarka
+                        for IICC, Yashbhoomi in Delhi
                       </h3>
                       <p
                         class="text-gray-700 pl-3 pb-3 text-base leading-relaxed"
                       >
-                        Pan India, 17th May 2024: In a significant development
+                        In a significant development
                         for culinary aficionados and event enthusiasts alike,
                         Foodlink has been declared as the integrated F&B service
                         partner for the prestigious Indian International
-                        Convention Centre/Yashobhoomi, located in Dwarka.
+                        Convention Centre/Yashobhoomi, located in Delhi.
                       </p>
                     </div>
                   </div>
@@ -480,9 +464,7 @@
 
           <!-- Community Section -->
           <div class="lg:col-span-4 relative">
-            <div
-              class="community-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
-            >
+            <div class="headingDiv">
               <h2 class="text-lg font-semibold tracking-wide">COMMUNITY</h2>
             </div>
             <div class="glow-shadow bg-white h-full min-h-[450px]">
@@ -500,13 +482,13 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <div class="community-content !h-full fact-item">
+              <!-- <div class="community-content !h-full fact-item">
                 <img
-                  src="images/Home page/community/3.JPG"
+                  src="images/Home page/community/3.png"
                   alt="Community Team"
                   class="w-full h-full object-cover"
                 />
-              </div>
+              </div> -->
               <div class="community-content !h-full fact-item">
                 <img
                   src="images/Home page/community/4.jpg"
@@ -521,10 +503,20 @@
     </section>
 
     <!-- partial:index.partial.html -->
-    <div class="timeline-container !min-h-screen">
+    <!-- <div class="timeline-container !min-h-screen">
       <div class="timeline">
         <div class="swiper-container !min-h-screen">
           <div class="swiper-wrapper">
+            <div
+              class="!z-40 w-full h-full absolute top-0 left-0"
+              style="
+                background-image: url('images/Home page/timelines/banner.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+              "
+              data-year=""
+            ></div>
             <div
               class="swiper-slide"
               style="
@@ -658,20 +650,45 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <!-- timeline-bg -->
+    <section class="w-full overflow-hidden relative">
+      <a href="/evolution.html" class="group">
+        <img
+          src="images/evolution/evolution-banner.png"
+          class="w-full h-screen md:h-full object-cover md:object-contain transition-all duration-1000 cursor-pointer group-hover:scale-[101%]"
+          alt=""
+        />
+        <div class="w-max absolute left-1/2 -translate-x-[46%] bottom-[10%] sm:bottom-[2%] text-left flex flex-col px-4 z-20 banner-text-contents gap-2 sm:gap-4">
+          <button
+          class="px-6 cursor-default py-2.5 text-[var(--dark-golden)] bg-[var(--dark-bg)] text-lg leading-relaxed w-fit font-semibold sm:translate-y-8 "
+        >
+          OUR EVOLUTION
+        </button>
+        <div
+        class="text-3xl md:text-[3rem] font-bold flex items-center font-playfair-display relative z-10 leading-10 whitespace-normal break-words max-w-full min-w-0"
+      >
+        <h2 class="block max-w-[95%] break-words break-all whitespace-normal sm:text-4xl md:text-[3rem]" style="word-break: break-word; overflow-wrap: anywhere;">A Journey Etched in Elegance</h2>
+        <div class="hidden sm:block max-w-[150px] translate-y-[5%] -translate-x-[15%]">
+          <img src="icons/right-triple-arrow.png" alt="right-arrow" class="w-full" />
+        </div>
+      </div>
+        </div>
+      </a>
+
+    </section>
 
     <!-- careers and employees section -->
-    <section class="mt-16 py-16 bg-gray-100 min-h-screen">
+    <section class="py-16 bg-gray-100 min-h-screen">
       <div class="container mx-auto px-4 h-full">
         <div
           class="grid grid-cols-1 lg:grid-cols-12 md:min-h-[750px] h-full gap-8"
         >
           <!-- careers -->
           <div class="lg:col-span-4 h-full glow-shadow relative">
-            <div
-              class="news-label bg-gray-100/80 absolute -top-6 -left-3 z-20 px-6 py-2.5 backdrop-blur-xs"
-            >
-              <h2 class="text-xl font-semibold tracking-wide">CAREERS</h2>
+            <div class="headingDiv">
+              <h2 class="text-xl font-semibold tracking-wide uppercase">CAREERS</h2>
             </div>
 
             <div class="grid h-full">
@@ -688,8 +705,8 @@
                 <div class="news-content">
                   <div class="relative mb-8">
                     <span
-                      class="text-[#C5873B] font-medium text-base uppercase tracking-wider"
-                      >CAREERS</span
+                      class="text-[#C5873B] font-semibold text-lg tracking-wider uppercase"
+                      >Careers</span
                     >
                     <div
                       class="triangle absolute bottom-[165%] -translate-y-1/2 rotate-90"
@@ -733,7 +750,7 @@
             >
               <div class="absolute inset-0 bg-black/30"></div>
               <div class="z-10 flex flex-col justify-center items-start gap-6">
-                <h3 class="text-xl uppercase text-white">FOR EMPLOYEES</h3>
+                <h3 class="text-xl text-white uppercase">For Employees</h3>
                 <div class="p-4 bg-[var(--dark-bg)] text-white max-w-[500px]">
                   <h2
                     class="text-3xl mt-3 mb-4 font-medium leading-tight !text-white"
@@ -762,8 +779,8 @@
               >
                 <div class="relative mb-8">
                   <span
-                    class="text-[#C5873B] text-base font-semibold uppercase tracking-wider"
-                    >IN NUMBERS</span
+                    class="text-[#C5873B] text-lg font-semibold tracking-wider uppercase"
+                    >In Numbers</span
                   >
                 </div>
 
@@ -826,13 +843,14 @@
     </section>
 
     <!-- last gallery section -->
-    <section class="bg-[var(--dark-bg)] w-screen min-h-screen relative">
-      <div
-        class="h-[85vh] w-full flex items-center justify-start px-4 md:px-8 md:pl-12 relative gallery-canvas"
+    <section class="bg-[var(--dark-bg)] w-screen h-screen relative">
+       <div class="grid !grid-rows-[1fr,auto] gap-0 w-full h-screen">
+        <div
+        class="w-full flex items-center justify-start px-4 md:px-8 md:pl-12 relative gallery-canvas"
       >
         <div class="w-full h-full absolute top-0 left-0 gallery-bg">
           <img
-            src="images/Home page/slide 01.jpg"
+            src="images/Home page/gallery/bg/1.jpg"
             class="w-full h-full object-cover"
             alt=""
           />
@@ -842,7 +860,7 @@
           class="absolute w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.6)] to-transparent inset-0"
         ></div>
 
-        <div class="w-full container mx-auto px-4 relative z-20">
+        <div class="container mx-auto px-4 relative z-20">
           <div class="z-20 max-w-[350px] w-full flex flex-col gap-4">
             <button
               class="px-6 py-2.5 text-[var(--dark-golden)] bg-[var(--dark-bg)] uppercase w-fit"
@@ -865,7 +883,7 @@
         </div>
       </div>
 
-      <div class="image-button-slider-container container -translate-y-10">
+      <div class="image-button-slider-container container">
         <button
           class="slider-prev-btn absolute z-30 top-1/2 -translate-y-1/2 left-1"
           aria-label="Previous slide"
@@ -873,125 +891,18 @@
           ❮
         </button>
         <button
-          class="slider-next-btn absolute right-6 z-30 top-1/2 -translate-y-1/2"
+          class="slider-next-btn absolute right-1 z-30 top-1/2 -translate-y-1/2"
           aria-label="Next slide"
         >
           ❯
         </button>
 
         <div class="image-button-slider w-[98%] mx-auto overflow-x-hidden">
-          <!-- Slider Item 1 -->
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/1.jpg"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/2.JPG"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/3.jpg"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/4.JPG"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/5.jpg"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/6.jpeg"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/7.jpg"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/8.jpg"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/9.jpg"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="image-button-item">
-            <div class="image-container">
-              <img
-                src="images/Home page/gallery/bg/10.jpg"
-                alt="Wedding Catering"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
+         
         </div>
       </div>
+       </div>
+
     </section>
 
     <!-- Video Control Script -->

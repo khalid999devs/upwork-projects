@@ -23,14 +23,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
-    />
 
     <link
       rel="stylesheet"
@@ -41,29 +33,39 @@
     />
   </head>
   <body class="overflow-x-hidden">
-
     <!-- Hero Section -->
     <section
       class="hero-section min-h-screen relative overflow-hidden flex items-center justify-center bg-black/70 bg-cover"
-      style="background-image: url('images/about/about-bg.jpg')"
+      style="background-image: url('images/about/banner.jpg')"
     >
       <div
         class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0"
       ></div>
-      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-        <h1 class="text-[3.5rem] font-bold text-white font-[Playfair Display] relative z-10  leading-10 max-w-[800px] px-4 text-center mx-auto">About Us
-          <!-- <p class="font-lato text-[2rem] font-normal text-[var(--light-gray)] mt-4">Share a Meal</p> -->
-        </h1>
+      <div class="superheader">
+        <div>
+          <button>About Us</button>
+          <h1>Explore the world of gastronomy and warm <br> hospitality with Foodlink</h1>
+        </div>
       </div>
+      <!-- <div
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full"
+      >
+        <h1
+          class="text-[3.5rem] font-bold text-white font-[Playfair Display] relative z-10 leading-10 max-w-[800px] px-4 text-center mx-auto"
+        >
+          About Us
+          <p class="font-lato text-[2rem] font-normal text-[var(--light-gray)] mt-4">Share a Meal</p>
+        </h1>
+      </div> -->
     </section>
 
     <!-- main section -->
-    <main class="w-full py-16">
+    <main class="w-full py-16 pb-0">
       <!-- conception -->
       <section id="conception" class="pb-16 bg-light-bg">
         <div class="container mx-auto px-4">
           <div class="grid md:grid-cols-2 gap-8">
-            <div class="carousel-container w-full">
+            <div class="md:hidden carousel-container w-full">
               <div
                 class="conception-carousel min-h-[420px] w-full overflow-hidden relative"
               >
@@ -90,12 +92,31 @@
                 </div>
               </div>
 
+
               <div
                 class="conception-dots dots-container absolute bottom-[6%] left-1/2 -translate-x-1/2"
               ></div>
             </div>
 
-            <div class="w-full">
+            
+            <div class="hidden w-full md:grid grid-rows-2 gap-4">
+              <div class="w-full h-full ">
+                <img
+                  src="images/about/Conception/BIS_4390.jpg"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div class="w-full h-full ">
+                <img
+                  src="images/about/Conception/DSCF8673.jpg"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="w-full md:flex flex-col justify-center items-start">
               <h1
                 class="text-3xl font-semibold relative text-[var(--dark-golden)] inline"
               >
@@ -104,22 +125,22 @@
                   class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"
                 ></span>
               </h1>
-              <p class="text-lg mt-7 text-[var(--dark-text)]">
-                Founded in 2003 by Sanjay Vazirani, Foodlink has evolved from a
-                small event catering service in Mumbai to a global leader in
-                luxury Food & Beverage solutions, offering a wide range of
-                services across four key verticals Luxury Event Catering, Luxury
-                Banquets & Conventions, Restaurants & Cloud Kitchens and
-                Integrated F&B Services.
+              <p class="para-texts mt-7 text-[var(--dark-text)]">
+                Founded in 2003 by Sanjay Vazirani, <b>Foodlink</b> has evolved from a small event catering service in Mumbai to a global leader in luxury Food & Beverage solutions, offering a wide range of services across four key verticals  <b> Luxury Event Catering, Luxury Banquets & Conventions, Restaurants & Cloud Kitchens and Integrated F&B Services.</b>
               </p>
-              <p class="text-lg mt-6 text-[var(--dark-text)]">
-                Driven by a passion for culinary excellence and a relentless
-                pursuit of innovation, Foodlink has established itself as a
-                pioneer known for creating unforgettable, bespoke culinary
-                experiences for elite business houses, celebrities, and discerning
-                clients worldwide. Our team adheres to international standards and
-                best practices, skilfully blending global flavours with local
-                tastes to create unique and memorable culinary experiences.
+              <p class="para-texts mt-6 text-[var(--dark-text)]">
+                Driven by a passion for culinary excellence and a relentless pursuit of innovation, Foodlink has established itself as a <b>pioneer</b> known for creating unforgettable, <b>bespoke culinary experiences for elite business houses, celebrities, and discerning clients worldwide.</b> Our team adheres to <b>international standards and best practices</b>, skilfully blending global flavours with local tastes to create unique and memorable culinary experiences.
+              </p>
+              <p class="para-texts mt-6 text-[var(--dark-text)]">
+                At Foodlink, we are committed to delivering exceptional quality and prioritizing customer satisfaction on every occasion. Headquartered in <b>Dubai, UAE</b>, Foodlink proudly serves both domestic and global markets, overseeing our operations worldwide. With a rich global footprint across <b>over 25 countries</b>, our extensive services cater to diverse needs. Our locations include <b>Dubai (UAE), Antalya (Turkey), and Milan (Italy).</b>
+              </p>
+              <p class="para-texts mt-6 text-[var(--dark-text)]">
+                In India, our regional offices and <b>state-of-the-art kitchens are strategically located in key cities, such as Mumbai (our India headquarter), Delhi, Ahmedabad, Hyderabad, Bangalore, and Chandigarh.</b><br>
+                Our focus on <b>innovation</b> ensures that we stay at the forefront of industry trends, setting new benchmarks in the F&B service domain. We are also deeply committed to <b>sustainability and community support</b>, with efforts to minimize our environmental footprint while supporting local communities through various initiatives.
+              </p>
+              <p class="para-texts mt-6 text-[var(--dark-text)]">
+                Foodlink remains dedicated to delivering unparalleled culinary artistry, professionalism, and service across diverse formats.<br>
+                <b>Explore the world of gastronomy and warm hospitality with Foodlink.</b>
               </p>
             </div>
           </div>
@@ -136,15 +157,19 @@
               class="flex flex-col items-center justify-center gap-1 max-w-[200px] text-center"
             >
               <div
-                class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center"
+                class="w-16 h-16 rounded-full flex items-center justify-center"
               >
                 <img
                   src="images/about/highlights-icon/Layer_1.png"
-                  class="w-6 h-6"
+                  class="w-8"
                   alt=""
                 />
               </div>
-              <p class="text-[var(--golden)] text-2xl font-semibold font-playfair-display">20+</p>
+              <p
+                class="text-[var(--golden)] text-4xl font-semibold font-playfair-display"
+              >
+                <span class="font-lato"> 20+</span>
+              </p>
               <p class="text-base">years of domain experience</p>
             </div>
 
@@ -152,48 +177,60 @@
               class="flex flex-col items-center justify-center gap-1 max-w-[200px] text-center"
             >
               <div
-                class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center"
+                class="w-16 h-16 rounded-full flex items-center justify-center"
               >
                 <img
                   src="images/about/highlights-icon/Frame.png"
-                  class="w-7 h-6"
+                  class="w-9"
                   alt=""
                 />
               </div>
-              <p class="text-[var(--golden)] text-2xl font-semibold font-playfair-display">2+ Lakh</p>
+              <p
+                class="text-[var(--golden)] text-4xl font-semibold font-playfair-display"
+              >
+                <span class="font-lato"> 2+
+              </p>
               <p class="text-base">
-                sq.ft. of state-of-the-art production & warehousing facilities
+                lakh sq.ft. of state-of-the-art production & warehousing facilities
               </p>
             </div>
             <div
               class="flex flex-col items-center justify-center gap-1 max-w-[200px] text-center"
             >
               <div
-                class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center"
+                class="w-16 h-16 rounded-full flex items-center justify-center"
               >
                 <img
                   src="images/about/highlights-icon/Group 2520.png"
-                  class="w-7 h-4"
+                  class="w-9"
                   alt=""
                 />
               </div>
-              <p class="text-[var(--golden)] text-2xl font-semibold font-playfair-display">80+</p>
+              <p
+                class="text-[var(--golden)] text-4xl font-semibold font-playfair-display"
+              >
+                <span class="font-lato">80+</span>
+              </p>
               <p class="text-base">lakh customer served globally</p>
             </div>
             <div
               class="flex flex-col items-center justify-center gap-1 max-w-[200px] text-center"
             >
               <div
-                class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center"
+                class="w-16 h-16 rounded-full flex items-center justify-center"
               >
                 <img
                   src="images/about/highlights-icon/Layer_1 (1).png"
-                  class="w-6 h-6 object-cover"
+                  class="w-8 object-cover"
                   alt=""
                 />
               </div>
-              <p class="text-[var(--golden)] text-2xl font-semibold font-playfair-display">10 Lakh+</p>
-              <p class="text-base">meals per day capacity</p>
+              <p
+                class="text-[var(--golden)] text-4xl font-semibold font-playfair-display"
+              >
+                <span class="font-lato">10+</span> 
+              </p>
+              <p class="text-base">lakh meals per day capacity</p>
             </div>
           </div>
         </div>
@@ -362,7 +399,7 @@
       </section> -->
 
       <!-- Footprint -->
-      <section id="footprint" class="py-16">
+      <!-- <section id="footprint" class="py-16">
         <div class="container mx-auto px-4 mb-5">
           <div class="grid gap-6 place-items-center">
             <div class="w-full text-center">
@@ -375,7 +412,9 @@
                 ></span>
               </h1>
             </div>
-            <p class="canvas-desc">Pioneering the Future of Experiential Gastronomy in India​</p>
+            <p class="canvas-desc">
+              Pioneering the Future of Experiential Gastronomy in India​
+            </p>
             <div
               class="max-w-[300px] w-full grid grid-cols-2 overflow-hidden toggle-btns-container"
             >
@@ -408,7 +447,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Vision and Mission -->
       <section id="vision-mission" class="py-16 bg-light-bg">
@@ -417,7 +456,7 @@
             <!-- vision and mission -->
             <div class="lg:col-span-8 relative">
               <div
-                class="news-label bg-gray-200 absolute -top-6 -left-3 z-10 px-6 py-2.5 bg-opacity-60 backdrop-blur-6"
+                class="headingDiv"
               >
                 <h2 class="text-xl font-semibold tracking-wide">
                   VISION & MISSION
@@ -510,10 +549,7 @@
                   <p
                     class="text-[var(--light-text)] px-5 pb-3 text-lg leading-relaxed relative"
                   >
-                    Staying a customer focused company that creates value for
-                    its stakeholders by constantly innovating and pursuing
-                    ground-breaking products, services, and management
-                    practices.
+                  To provide world class culinary and hospitality experiences that delight our guests while staying committed to the well-being of our employees as well as our social responsibility towards the environment and community.
 
                     <span
                       class="absolute h-[90%] w-[2px] bg-[var(--dark-golden)] top-1/2 -translate-y-1/2 left-0"
@@ -600,15 +636,15 @@
 
       <!--chairman section  -->
       <section
-        class="py-16 mb-16 bg-light-bg min-h-screen"
+        class=" bg-light-bg h-screen"
         style="
           background-image: url('images/Home page/chairman.jpg');
           background-size: cover;
-          background-position: center;
+          background-position: top;
         "
       >
         <div
-          class="container mx-auto px-4 flex h-full items-end justify-center min-h-screen"
+          class="container mx-auto px-4 flex  items-end justify-center h-screen py-16"
         >
           <div
             class="max-w-[720px] w-full p-6 bg-black/50 flex flex-col gap-6 rounded-md"
@@ -617,8 +653,8 @@
               Sanjay Vazirani, Founder & Chairman, Foodlink Group
             </h2>
             <p class="text-[var(--light-text)] opacity-80">
-              He is a first-generation visionary entrepreneur and a
-              trailblazer in the global hospitality industry. 
+              A first-generation visionary entrepreneur and a trailblazer
+              in the global hospitality industry.
               <!-- As the Founder and
               Chairman of Foodlink Group, he has redefined luxury dining and
               created a legacy of world-class catering and unparalleled culinary
@@ -825,20 +861,32 @@
       </section> -->
 
       <!--  infrastructure-->
-        <section class="w-full min-h-screen bg-cover relative py-16" style="background-image: url('images/about/infrastructure.jpg');">
-          <div class="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-transparent z-10 left-0 top-0 w-full h-full"></div>
-          <div class="container mx-auto px-4 flex min-h-screen items-end justify-center relative z-10">
-            <div class="p-7 bg-black/50 flex flex-col gap-6 items-center justify-center rounded-lg">
-              <h1 class="text-4xl font-semibold relative text-[var(--light-text)] inline uppercase">
-                Infrastructure
-              </h1>
-              <p class="text-xl text-[var(--light-text)] opacity-80">The Silent Strength Behind Every Grand Celebration</p>
-              <a href="/infrastructure.html" class="btn">Know More</a>
-            </div>
+      <section
+        class="w-full h-screen bg-cover relative"
+        style="background-image: url('images/about/infrastructure.jpg')"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-transparent z-10 left-0 top-0 w-full h-full"
+        ></div>
+        <div
+          class="container mx-auto px-4 flex h-screen items-end justify-center relative z-10  py-16"
+        >
+          <div
+            class="p-7 bg-black/50 flex flex-col gap-6 rounded-lg"
+          >
+            <h1
+              class="text-2xl font-semibold relative text-[var(--light-text)] inline uppercase"
+            >
+              Infrastructure
+            </h1>
+            <p class="text-[var(--light-text)] opacity-80">
+              The Silent Strength Behind Every Grand Celebration
+            </p>
+            <a href="/infrastructure.html" class="btn">Know More</a>
           </div>
-        </section>
+        </div>
+      </section>
 
-     
       <!-- highlights -->
       <!-- <section class="py-16 bg-light-bg w-full">
         <div class="container mx-auto px-4">
@@ -961,8 +1009,6 @@
         </div>
       </section> -->
     </main>
-
-
 
     <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script>

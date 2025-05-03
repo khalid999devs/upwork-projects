@@ -1,4 +1,12 @@
 
+
+@layer utilities{
+  .div-line{
+    border-top: 1ps solid var(--light-text);
+    
+  }
+}
+
 .timeline-container{
     display: flex;
     justify-content: center;
@@ -71,15 +79,21 @@
     gap: 12px;
   }
   .timeline .swiper-slide .timeline-year {
-    display: block;
+    display: inline;
+    width: min-content;
    
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 50px;
     transform: translate3d(20px, 0, 0);
     color: #BD8F31;
-    font-weight: 300;
     opacity: 0;
     transition: 0.2s ease 0.4s;
+
+    padding: 4px 24px 10px 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+
   }
   .timeline .swiper-slide .timeline-title {
 
@@ -116,6 +130,8 @@
     color:var(--light-text);
     font-size: 34px;
     /* max-width: 80%; */
+    border-top: 1px solid var(--light-text);
+    margin-top  : 2rem;
   }
   .timeline .swiper-pagination {
     right: 15% !important;
@@ -222,7 +238,6 @@
     }
     .timeline .swiper-slide-active .timeline-text {
         font-size:32px;
-        max-width: 80%;
       }
     .timeline .swiper-button-prev {
       top: 10%;
@@ -256,6 +271,18 @@
       width: 55%!important;
       text-align: left;
     }
+    .timeline .timeline-title {
+      max-width: 95%;
+    }
+    .timeline .timeline-text {
+      max-width: 80%;
+    }
+    .timeline .swiper-slide-active .timeline-title {
+      max-width: 95%;
+    }
+    .timeline .swiper-slide-active .timeline-text {
+      max-width: 80%;
+    }
   }
 
   @media screen and (min-width: 1380px) {
@@ -266,16 +293,16 @@
     }
 
     .timeline-title{
-      font-size: 48px!important;
+      font-size: 44px!important;
     }
     .timeline-text{
-      font-size: 48px!important;
+      font-size: 44px!important;
     }
     .swiper-item-slide .timeline-text{
-      font-size: 48px!important;
+      font-size: 44px!important;
     }
     .timeline-year{
-      font-size: 48px!important;
+      font-size: 44px!important;
     }
     .timeline .swiper-pagination{
       font-size: 24px;

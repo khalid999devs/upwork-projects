@@ -667,11 +667,7 @@ const galleryContents=[
 {
   image:"images/Home page/gallery/bg/10.jpg",
   logo:"images/Home page/gallery/logo/4.png"
-},
-{
-  image:"images/Home page/gallery/bg/11.jpg",
-  logo:"images/Home page/gallery/logo/4.png"
-},
+}
 ]
 
 function setGalleryCanvas(galleryCanvas, logo, bgImage) {
@@ -690,7 +686,7 @@ function setGalleryCanvas(galleryCanvas, logo, bgImage) {
                   <img src="${bgImage}" class="w-full h-full object-cover" alt="">
                 </div>
                 <div class="absolute w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.6)]  to-transparent inset-0"></div>
-                <div class="w-full container mx-auto px-4 relative z-20">
+                <div class="container mx-auto px-4 relative z-20">
                 <div class="gallery-animated-content z-20 max-w-[350px] w-full flex flex-col gap-4 gallery-fade">
                   <button class="px-6 py-2.5 text-[var(--dark-golden)] bg-[var(--dark-bg)] uppercase w-fit">our brands</button>
                 </div>
@@ -718,12 +714,33 @@ function setGalleryCanvas(galleryCanvas, logo, bgImage) {
     }
 }
 
+function setpImageButtonSliders(imageButtonSlider){
+  imageButtonSlider.innerHTML=galleryContents.map((content,index)=>{
+    return `
+              <div class="image-button-item">
+            <div class="image-container">
+              <img
+                src="${content.image}"
+                alt="${content.image}"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+    `
+  }).join('')
+}
+
 // Image Button Slider Functionality
 function initImageButtonSlider() {
     const slider = document.querySelector('.image-button-slider');
     if (!slider) return;
 
+    const imageButtonSlider=document.querySelector('.image-button-slider');
+    setpImageButtonSliders(imageButtonSlider);
+
     const items = slider.querySelectorAll('.image-button-item');
+    if(!items.length) return;
     const dotsContainer = document.querySelector('.slider-dots');
     const prevBtn = document.querySelector('.slider-prev-btn');
     const nextBtn = document.querySelector('.slider-next-btn');

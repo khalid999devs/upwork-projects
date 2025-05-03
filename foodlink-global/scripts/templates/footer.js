@@ -1,6 +1,6 @@
 // scripts/templates/footer.js
-export const footerTemplate =()=>`    <footer
-      class="container w-full bg-white border-t border-gray-200 pt-24 md:pt-10 pb-14 px-4 text-[13px]"
+export const footerTemplate = () => `    <footer
+      class="container bg-white border-t border-gray-200 pt-24 md:pt-10 pb-14 px-4 text-[13px]"
     >
       <div class="w-full flex flex-col md:flex-row gap-8">
         <!-- Left: Columns (all in one row, compact) -->
@@ -17,14 +17,15 @@ export const footerTemplate =()=>`    <footer
             </h4>
             <ul class="text-gray-700 !space-y-[4px] mt-4">
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/about.html#conception" class="!text-[var(--dark-text)]">Conception</a></li>
-              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/evolution.html" class="!text-[var(--dark-text)]">Our Evolution</a></li>
-              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/our-footprints.html" class="!text-[var(--dark-text)]">Our Footprint</a></li>
+              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/evolution.html" class="!text-[var(--dark-text)]">Evolution</a></li>
+              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/our-footprints.html" class="!text-[var(--dark-text)]">Footprint</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/about.html#vision-mission" class="!text-[var(--dark-text)]">Vision & Mission</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/value-framework.html" class="!text-[var(--dark-text)]">Value Framework</a></li>
-              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/our-founder.html" class="!text-[var(--dark-text)]">Our Founder</a></li>
-              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/infrastructure.html" class="!text-[var(--dark-text)]">Infrastructure</a></li>
-              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/community.html#our-assurance" class="!text-[var(--dark-text)]">Our Assurance</a></li>
+              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/our-founder.html" class="!text-[var(--dark-text)]">Founder</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/leadership.html" class="!text-[var(--dark-text)]">Leadership</a></li>
+              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/infrastructure.html" class="!text-[var(--dark-text)]">Infrastructure</a></li>
+              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/investors.html#our-assurance" class="!text-[var(--dark-text)]">Investors</a></li>
+
             </ul>
           </div>
           <!-- Business -->
@@ -43,7 +44,7 @@ export const footerTemplate =()=>`    <footer
             </ul>
           </div>
           <!-- Investor -->
-          <div>
+          <!-- <div>
             <h4
               class="font-bold mb-1 text-xs md:text-sm"
               style="color: var(--dark-bg)"
@@ -64,7 +65,10 @@ export const footerTemplate =()=>`    <footer
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/board-of-directors.html" class="!text-[var(--dark-text)]">Board of Directors</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/investor-grievance.html" class="!text-[var(--dark-text)]">Investor Grievance</a></li>
             </ul>
-          </div>
+          </div> -->
+
+
+
           <!-- Newsroom -->
           <div>
             <h4
@@ -89,8 +93,8 @@ export const footerTemplate =()=>`    <footer
             </h4>
             <ul class="text-gray-700 !space-y-[4px] mt-4">
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/community.html#our-assurance" class="!text-[var(--dark-text)]">Our Assurance</a></li>
+              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/community.html#sustainibility" class="!text-[var(--dark-text)]">Sustainability At Core</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/community.html#social-responsibility" class="!text-[var(--dark-text)]">Social Responsibility</a></li>
-              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/community.html#sustainibility" class="!text-[var(--dark-text)]">Food Safety</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/community.html#empowerment" class="!text-[var(--dark-text)]">Empowerment</a></li>
             </ul>
           </div>

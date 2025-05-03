@@ -6,9 +6,9 @@
     <title>Business Overview - FoodLink Global</title>
     <script src="https://cdn.tailwindcss.com" defer></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
   </head>
   <body class="overflow-x-hidden">
-
     <!-- Hero Section -->
     <section
       class="hero-section min-h-screen relative overflow-hidden flex items-center justify-center bg-black/70 bg-cover"
@@ -17,126 +17,177 @@
       <div
         class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0"
       ></div>
+      <div class="superheader">
+        <div>
+          <button>Business Overview</button>
+          <h1>Where Culinary Excellence Meets Inspired Hospitality</h1>
+        </div>
+      </div>
+      <!-- <div
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full"
+      >
+        <h1
+          class="text-[3rem] mx-auto font-bold text-white font-[Playfair Display] relative z-10 leading-10 max-w-[800px] px-4"
+        >
+          Business Overview
+        </h1>
+      </div> -->
     </section>
 
     <!-- main section -->
-   <main class="w-full py-16 pt-0 min-h-screen">
-    <div class="w-full">
-      <!-- sympony -->
-      <section class="px-4 py-16 pb-12 container mx-auto text-center">
-        <h1 class="text-4xl">Where Culinary Excellence Meets Inspired Hospitality</h1>
-        <div class="flex w-full flex-col gap-5 mt-5 desc-texts">
-            <p>Food is more than a meal—it’s a celebration of culture, connection, and creativity. Founded in 2003, Foodlink has grown into a global leader in luxury food and beverage services, with operations spanning over 25 countries. Our expertise lies in delivering unforgettable experiences across four verticals: **Luxury Event Catering**, **Luxury Banquets & Conventions**, **Restaurants & Cloud Kitchens**, and **Integrated F&B Services**.</p>
-            <p>From curating iconic weddings and elite events to managing high-volume F&B at convention centres, and operating award-winning brands like *India Bistro*, *China Bistro*, *Glocal*, and *Art of Dum*—we blend culinary artistry with world-class hospitality.</p>
-            <p>With cutting-edge infrastructure, a passion for innovation, and an unwavering focus on quality, Foodlink continues to redefine the future of food and hospitality—one experience at a time.</p>
-            
-        </div>
-      </section>
+    <main class="w-full py-16 pt-0 min-h-screen">
+      <div class="w-full">
+        <!-- sympony -->
+        <section class="px-4 py-16 pb-12 container mx-auto text-left">
+          <h1 class="text-4xl">
+            Where Culinary Excellence Meets Inspired Hospitality
+          </h1>
+          <div class="flex w-full flex-col gap-5 mt-5 desc-texts">
+            <p>
+              Food is more than a meal—it’s a celebration of culture,
+              connection, and creativity. Founded in 2003, Foodlink has grown
+              into a global leader in luxury food and beverage services, with
+              operations spanning over 25 countries. Our expertise lies in
+              delivering unforgettable experiences across four verticals:
+              <strong>Luxury Event Catering</strong>,
+              <strong>Luxury Banquets & Conventions</strong>,
+              <strong>Restaurants & Cloud Kitchens</strong>, and
+              <strong>Integrated F&B Services</strong> .
+            </p>
+            <p>
+              From curating iconic weddings and elite events to managing
+              high-volume F&B at convention centres, and operating award-winning
+              brands like <strong>India Bistro</strong>,
+              <strong>China Bistro</strong>, <strong>Glocal</strong>, and
+              <strong>Art of Dum</strong>—we blend culinary artistry with
+              world-class hospitality.
+            </p>
+            <p>
+              With cutting-edge infrastructure, a passion for innovation, and an
+              unwavering focus on quality, Foodlink continues to redefine the
+              future of food and hospitality—one experience at a time.
+            </p>
+          </div>
+        </section>
 
-      <!-- hover cards -->
-      <section class="px-4 py-8 container mx-auto">
-        <div class="grid md:grid-cols-2 gap-8">
+        <!-- hover cards -->
+        <section class="px-4 py-8 pb-0 container mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
             <a
-                  class="glow-shadow bg-white h-full min-h-[450px] relative p-6 flex items-center justify-cente relative cursor-pointer group"
+              href="/luxury-event-catering.html"
+              class="glow-shadow bg-white h-full min-h-[450px] p-6 flex items-center justify-cente relative cursor-pointer group"
             >
+              <div 
+                class="absolute inset-0 bg-black/60 z-10 left-1/2 top-1/2 w-[75%] h-[75%] -translate-x-1/2 -translate-y-1/2 p-4 flex items-center justify-center"
+              >
+                <img
+                  src="images/business-overview/logos/2.png"
+                  alt="logo"
+                  class="max-w-[280px] w-full object-contain origin-center"
+                />
+                <div class="absolute bottom-[10%] left-1/2 -translate-x-1/2">
+                  <button class="btn !py-1.5 !px-4">Know More</button>
+                </div>
+              </div>
+              <div class="!h-full absolute top-0 left-0 w-full overflow-hidden">
+                <img
+                  src="images/business-overview/card-bg/2.png"
+                  alt="Our offerings"
+                  class="w-full h-full object-cover group-hover:scale-[102%] transition-all duration-1000"
+                />
                 <div
-                    class="absolute inset-0 bg-black/60 z-10 left-1/2 top-1/2 w-[85%] h-[85%] -translate-x-1/2 -translate-y-1/2 p-4 flex items-center justify-center"
-                  >
-                    <img
-                      src="images/business-overview/logos/1.png"
-                      alt="logo"
-                      class="max-w-[280px] w-full object-contain origin-center"
-                    />
-                </div>
-                <div class="!h-full absolute top-0 left-0 w-full overflow-hidden">
-                    <img
-                      src="images/business-overview/card-bg/1.png"
-                      alt="Our offerings"
-                      class="w-full h-full object-cover group-hover:scale-[102%] transition-all duration-1000"
-                    />
-                    <div
-                    class="absolute bottom-[6%] left-1/2 -translate-x-1/2"
-                  ></div>
-                </div>
-              </a>  
+                  class="absolute bottom-[6%] left-1/2 -translate-x-1/2"
+                ></div>
+              </div>
+            </a>
 
             <a
-                  class="glow-shadow bg-white h-full min-h-[450px] relative p-6 flex items-center justify-cente relative cursor-pointer group"
+              href="/restaurant-and-cloud-kitchen.html"
+              class="glow-shadow bg-white h-full min-h-[450px] p-6 flex items-center justify-cente relative cursor-pointer group"
             >
+              <div
+                class="absolute inset-0 bg-black/60 z-10 left-1/2 top-1/2 w-[75%] h-[75%] -translate-x-1/2 -translate-y-1/2 p-4 flex items-center justify-center"
+              >
+                <img
+                  src="images/business-overview/logos/1.png"
+                  alt="logo"
+                  class="max-w-[280px] w-full object-contain origin-center"
+                />
+                <div class="absolute bottom-[10%] left-1/2 -translate-x-1/2">
+                  <button class="btn !py-1.5 !px-4">Know More</button>
+                </div>
+              </div>
+              <div class="!h-full absolute top-0 left-0 w-full overflow-hidden">
+                <img
+                  src="images/business-overview/card-bg/1.png"
+                  alt="Our offerings"
+                  class="w-full h-full object-cover group-hover:scale-[102%] transition-all duration-1000"
+                />
                 <div
-                    class="absolute inset-0 bg-black/60 z-10 left-1/2 top-1/2 w-[85%] h-[85%] -translate-x-1/2 -translate-y-1/2 p-4 flex items-center justify-center"
-                  >
-                    <img
-                      src="images/business-overview/logos/2.png"
-                      alt="logo"
-                      class="max-w-[280px] w-full object-contain origin-center"
-                    />
-                </div>
-                <div class="!h-full absolute top-0 left-0 w-full overflow-hidden">
-                    <img
-                      src="images/business-overview/card-bg/2.png"
-                      alt="Our offerings"
-                      class="w-full h-full object-cover group-hover:scale-[102%] transition-all duration-1000"
-                    />
-                    <div
-                    class="absolute bottom-[6%] left-1/2 -translate-x-1/2"
-                  ></div>
-                </div>
-              </a>   
+                  class="absolute bottom-[6%] left-1/2 -translate-x-1/2"
+                ></div>
+              </div>
+            </a>
 
             <a
-                  class="glow-shadow bg-white h-full min-h-[450px] relative p-6 flex items-center justify-cente relative cursor-pointer group"
+              href="/luxury-banquets-and-conventions.html"
+              class="glow-shadow bg-white h-full min-h-[450px] p-6 flex items-center justify-cente relative cursor-pointer group"
             >
+              <div
+                class="absolute inset-0 bg-black/60 z-10 left-1/2 top-1/2 w-[75%] h-[75%] -translate-x-1/2 -translate-y-1/2 p-4 flex items-center justify-center"
+              >
+                <img
+                  src="images/business-overview/logos/4.png"
+                  alt="logo"
+                  class="max-w-[280px] w-full object-contain origin-center"
+                />
+                <div class="absolute bottom-[10%] left-1/2 -translate-x-1/2">
+                  <button class="btn !py-1.5 !px-4">Know More</button>
+                </div>
+              </div>
+              <div class="!h-full absolute top-0 left-0 w-full overflow-hidden">
+                <img
+                  src="images/business-overview/card-bg/4.jpeg"
+                  alt="Our offerings"
+                  class="w-full h-full object-cover group-hover:scale-[102%] transition-all duration-1000"
+                />
                 <div
-                    class="absolute inset-0 bg-black/60 z-10 left-1/2 top-1/2 w-[85%] h-[85%] -translate-x-1/2 -translate-y-1/2 p-4 flex items-center justify-center"
-                  >
-                    <img
-                      src="images/business-overview/logos/3.png"
-                      alt="logo"
-                      class="max-w-[280px] w-full object-contain origin-center"
-                    />
-                </div>
-                <div class="!h-full absolute top-0 left-0 w-full overflow-hidden">
-                    <img
-                      src="images/business-overview/card-bg/3.jpeg"
-                      alt="Our offerings"
-                      class="w-full h-full object-cover group-hover:scale-[102%] transition-all duration-1000"
-                    />
-                    <div
-                    class="absolute bottom-[6%] left-1/2 -translate-x-1/2"
-                  ></div>
-                </div>
-              </a>
-            
+                  class="absolute bottom-[6%] left-1/2 -translate-x-1/2"
+                ></div>
+              </div>
+            </a>
+
             <a
-                  class="glow-shadow bg-white h-full min-h-[450px] relative p-6 flex items-center justify-cente relative cursor-pointer group"
+              href="/integrated-fnb-services.html"
+              class="glow-shadow bg-white h-full min-h-[450px] p-6 flex items-center justify-cente relative cursor-pointer group"
             >
+              <div
+                class="absolute inset-0 bg-black/60 z-10 left-1/2 top-1/2 w-[75%] h-[75%] -translate-x-1/2 -translate-y-1/2 p-4 flex items-center justify-center"
+              >
+                <img
+                  src="images/business-overview/logos/3.png"
+                  alt="logo"
+                  class="max-w-[280px] w-full object-contain origin-center"
+                />
+                <div class="absolute bottom-[10%] left-1/2 -translate-x-1/2">
+                  <button class="btn !py-1.5 !px-4">Know More</button>
+                </div>
+              </div>
+              <div class="!h-full absolute top-0 left-0 w-full overflow-hidden">
+                <img
+                  src="images/business-overview/card-bg/3.jpeg"
+                  alt="Our offerings"
+                  class="w-full h-full object-cover group-hover:scale-[102%] transition-all duration-1000"
+                />
                 <div
-                    class="absolute inset-0 bg-black/60 z-10 left-1/2 top-1/2 w-[85%] h-[85%] -translate-x-1/2 -translate-y-1/2 p-4 flex items-center justify-center"
-                  >
-                    <img
-                      src="images/business-overview/logos/4.png"
-                      alt="logo"
-                      class="max-w-[280px] w-full object-contain origin-center"
-                    />
-                </div>
-                <div class="!h-full absolute top-0 left-0 w-full overflow-hidden">
-                    <img
-                      src="images/business-overview/card-bg/4.jpeg"
-                      alt="Our offerings"
-                      class="w-full h-full object-cover group-hover:scale-[102%] transition-all duration-1000"
-                    />
-                    <div
-                    class="absolute bottom-[6%] left-1/2 -translate-x-1/2"
-                  ></div>
-                </div>
-              </a>     
-        </div>
-      </section>
-
-    </div>
-   </main>
-
+                  class="absolute bottom-[6%] left-1/2 -translate-x-1/2"
+                ></div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <script src="main.js" type="module" defer></script>
   </body>

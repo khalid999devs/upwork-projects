@@ -13,7 +13,7 @@ class AboutPage {
   }
 
   initEventListeners() {
-    this.ourFootPrintHandling();
+    // this.ourFootPrintHandling();
   }
 
   initializeSliders() {
@@ -106,7 +106,7 @@ class AboutPage {
           'images/about/Indian & global footprint/global footprint.png';
         mapCanvas.querySelector('img').alt = 'Global footprint map';
         document.querySelector('.canvas-desc').textContent =
-          'Globally Recognized In Experiential Gastronomy';
+          'Globally recognized leader in experiential gastronomy';
       }
     });
   }

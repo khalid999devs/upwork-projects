@@ -5,35 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leadership - FoodLink Global</title>
     <script src="https://cdn.tailwindcss.com" defer></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/aos@next/dist/aos.css"
-      media="print"
-      onload="this.media='all'"
-    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/utils.css" />
-    <link rel="stylesheet" href="styles/timeline-slider.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
     <link
       rel="stylesheet"
@@ -42,31 +15,52 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
   </head>
   <body class="overflow-x-hidden">
-
     <!-- Hero Section -->
     <section
-      class="hero-section min-h-screen relative overflow-hidden flex items-end justify-center bg-black/70 bg-cover"
+      class="hero-section min-h-screen relative overflow-hidden flex items-end justify-center bg-black/70 bg-cover pb-8"
       style="background-image: url('images/leadership/leadership-banner.jpeg')"
     >
+    <div class="superheader">
+      <div>
+        <button>Leadership</button>
+        <h1>Empowering leadership that drives growth, inspires innovation, and fosters a culture of collaboration at Foodlink</h1>
+      </div>
+    </div>
       <div
         class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.2)] absolute inset-0"
       ></div>
-      <h1 class="text-[2.5rem] font-bold text-white font-[Playfair Display] relative z-10  leading-10 max-w-[850px] px-4">Empowering leadership that drives growth, inspires innovation, and fosters a  culture of collaboration at Foodlink</h1>
+      <!--
+      <h1
+        class="text-[3rem] font-bold text-white font-[Playfair Display] relative z-10 leading-10 max-w-[850px] px-4"
+      >
+        Leadership
+      </h1> -->
     </section>
 
     <!-- main section -->
-   <main class="w-full py-16 pt-0 min-h-screen">
-    <section class="container px-4 py-16 mx-auto">
-      <p>Our leaders play a crucial role in  shaping our strategy and driving  day-to-day business success.  They deliver results, champion  change, and embody our values  and culture. Committed to  developing our people and  cultivating future leaders, they  inspire and lead with a focus on  our vision and mission. Guided  by Foodlink’s core values, they  foster a culture of collaboration,  innovation, and growth, ensuring  we continue to evolve and  succeed together.</p>
-    </section>
+    <main class="w-full pt-0 min-h-screen">
+      <section class="container px-4 py-16 mx-auto">
+        <h1 class="text-4xl mb-5">
+          Empowering leadership that drives growth, inspires innovation, and
+          fosters a culture of collaboration at Foodlink
+        </h1>
+        <p>
+          Our leaders play a crucial role in shaping our strategy and driving
+          day-to-day business success. They deliver results, champion change,
+          and embody our values and culture. Committed to developing our people
+          and cultivating future leaders, they inspire and lead with a focus on
+          our vision and mission. Guided by Foodlink’s core values, they foster
+          a culture of collaboration, innovation, and growth, ensuring we
+          continue to evolve and succeed together.
+        </p>
+      </section>
 
-    <!-- people -->
-     <section class="bg-[var(--light-gray)] py-16 w-full">
+      <!-- people -->
+      <section class="bg-[var(--light-gray)] py-16 w-full">
         <div class="px-4 container mx-auto">
-            <div
+          <div
             class="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 leadership-container gap-4 gap-y-8"
           >
             <!-- Leader Card -->
@@ -96,38 +90,39 @@
             </div> -->
           </div>
         </div>
-     </section>
-   </main>
-
-
-
-   
-
+      </section>
+    </main>
 
     <script src="main.js" type="module" defer></script>
     <script type="module">
-        import {leaders} from './scripts/contents/leadership.js'
-        document.addEventListener('DOMContentLoaded', () => {
-            var container = document.querySelector('.leadership-container');
+      import { leaders } from './scripts/contents/leadership.js';
+      document.addEventListener('DOMContentLoaded', () => {
+        var container = document.querySelector('.leadership-container');
         if (!container) return;
-        container.innerHTML = leaders.map(function(leader, i) {
-          return `
+        container.innerHTML = leaders
+          .map(function (leader, i) {
+            return `
             <div class="flex flex-col items-center text-center bg-white shadow-md glow-shadow relative">
-              ${i === 0 ? `<div class="news-label bg-gray-200 absolute -top-8 -left-3 z-10 px-6 py-2.5 bg-opacity-60 backdrop-blur-6"><h2 class="text-2xl font-semibold tracking-wide">Leadership</h2></div>` : ''}
-              <img src="${leader.image}" alt="${leader.title}" class="w-full max-h-[280px] sm:min-h-[130px] object-cover" />
+              ${
+                i === 0
+                  ? `<div class="headingDiv"><h2 class="text-2xl font-semibold tracking-wide">Leadership</h2></div>`
+                  : ''
+              }
+              <img src="${
+                leader.image
+              }" alt="${leader.title}" class="w-full max-h-[280px] sm:min-h-[130px] object-cover" />
               <div class="px-2 flex flex-col gap-1 w-full pt-3 pb-5">
-                <p class="text-base font-semibold text-[var(--golden)]">${leader.title}</p>
+                <p class="text-base font-semibold text-[var(--golden)]">${
+                  leader.title
+                }</p>
                 <p class="text-sm text-gray-900">${leader.designation}</p>
               </div>
             </div>
           `;
-        }).join('');
-        })
-        
+          })
+          .join('');
+      });
     </script>
 
-   
-        <!-- partial -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
   </body>
 </html>

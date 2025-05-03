@@ -8,224 +8,366 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/utils.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="overflow-x-hidden">
-
     <section
-    class="hero-section h-[25vh] md:h-screen relative overflow-hidden flex items-center justify-center"
-  >
-    <!-- Direct MP4 Video Player with Custom Controls -->
-    <div class="w-full h-full relative">
-      <video
-        id="hero-video"
-        class="w-full h-full object-cover object-center"
-        autoplay
-        loop
-        playsinline
-        muted
-        src="https://adilo.bigcommand.com/923bb46c-d8ea-4191-ad7e-516a12764f77.mp4"
-        poster="images/Home page/slide 01.jpg"
-        preload="auto"
+      class="hero-section h-[25vh] md:h-screen relative overflow-hidden flex items-center justify-center"
+    >
+      <!-- Direct MP4 Video Player with Custom Controls -->
+      <div class="w-full h-full relative">
+        <video
+          id="hero-video"
+          class="w-full h-full object-cover object-center"
+          autoplay
+          loop
+          playsinline
+          muted
+          src="https://adilo.bigcommand.com/923bb46c-d8ea-4191-ad7e-516a12764f77.mp4"
+          poster="images/Home page/slide 01.jpg"
+          preload="auto"
+        ></video>
+      </div>
+
+      <div
+        class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0"
+      ></div>
+      <div class="superheader">
+        <div>
+          <button>Community</button>
+          <h1>Our Promise - Serving Beyond the Table</h1>
+        </div>
+      </div>
+
+      <!-- <div
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] px-4 text-center mx-auto"
       >
-      </video>
-    </div>
-
-    <div
-    class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0"
-  ></div>
-
-  <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-    <h1 class="text-[3.5rem] font-bold text-white font-[Playfair Display] relative z-10  leading-10 max-w-[800px] px-4 text-center mx-auto">Our Promise 
-      <!-- <p class="font-lato text-[2rem] font-normal text-[var(--light-gray)] mt-4">Share a Meal</p> -->
-    </h1>
-  </div>
-  </section>
+        <h1
+          class="text-[3rem] font-bold text-white font-[Playfair Display] relative z-10 leading-10 "
+        >
+          Our Promise
+          <p class="font-lato text-[2rem] font-normal text-[var(--light-gray)] mt-4">Share a Meal</p>
+        </h1>
+      </div> -->
+    </section>
 
     <!-- main section -->
-   <main class="w-full pt-0 min-h-screen">
-    <div class="w-full">
-      <!-- desc -->
-      <section class="px-4 pt-5 pb-2 container mx-auto">
-        <div class="flex w-full flex-col gap-5 mt-5 desc-texts text-xl leading-relaxed text-center">
-            <p>We are committed to make a meaningful impact within and outside our organization. Our Social Promise is built around enhancing opportunities, transforming lives, and driving positive change through job creation, education, training, and community engagement. We aim to contribute to a more sustainable and inclusive future while fostering social responsibility in all aspects of our operations.</p>
-
-        </div>
-      </section>
-
-      <!-- our assurance -->
-      <section id="our-assurance" class="py-16 bg-light-bg">
-        <div class="container md:w-[85%] mx-auto grid gap-12 px-4">
-          <div class="flex flex-col md:flex-row-reverse items-start gap-4">
-            <img 
-              src="images/community/our-assurance.png" 
-              alt="Social Responsibility" 
-              class="shadow-md bg-white w-full md:w-[45%] max-h-[500px] object-cover mb-6 md:mb-2 md:mr-8 order-1 md:order-1"
-              style="background: var(--light-bg);"
-            />
-            <div class="text-lg md:text-xl text-[var(--dark-text)] mt-8 md:mt-0">
-              <div class="w-full text-left md:text-left mb-6">
-                <h1 class="text-3xl md:text-4xl font-semibold relative text-[var(--dark-golden)] inline-block" style="font-family: 'Playfair Display', serif;">
-                  <span class="text-[var(--dark-text)]">OUR ASSURANCE </span>
-                  <span class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"></span>
-                </h1>
-              </div>
-              <p class="mb-6">
-                At Foodlink, the health and safety of our guests are paramount. We uphold the highest standards of food safety through rigorous hygiene protocols and industry-leading practices in every stage—from sourcing and preparation to storage and delivery.
-              </p>
-              <p class="mb-6">Our Food Safety Management System is fully compliant with ISO, HACCP, and FSSAI regulations, ensuring unwavering quality and safety in every dish we serve. </p>
-              <p class="mb-4">
-                Our culinary team, led by seasoned master chefs, alongside professionally trained food handlers and meticulous service staff, is committed to delivering an exceptional dining experience—with hygiene and food safety at the heart of everything we do.
-              </p>
-            </div>
-          </div>
-
+    <main class="w-full pt-0 min-h-screen">
+      <div class="w-full">
+        <!-- desc -->
+        <section class="px-4 pt-5 pb-2 container mx-auto">
           <div
-            class="flex flex-col gap-8 sm:flex-row sm:flex-wrap items-center justify-center"
+            class="flex w-full flex-col gap-5 mt-5 desc-texts para-texts leading-relaxed text-left"
           >
-            <div class="max-w-[250px]">
-              <img
-                src="images/about/assurance/iso-22000-2018-1 1.png"
-                alt="assurance-1"
-                class="w-full object-contain"
-              />
-            </div>
-            <div class="max-w-[220px]">
-              <img
-                src="images/about/assurance/iso-22000-2018-1 2.png"
-                alt="assurance-1"
-                class="w-full object-contain"
-              />
-            </div>
-            <div class="max-w-[240px]">
-              <img
-                src="images/about/assurance/iso-22000-2018-1 3.png"
-                alt="assurance-1"
-                class="w-full object-contain"
-              />
-            </div>
+            <p>
+              We are committed to make a meaningful impact within and outside
+              our organization. Our Social Promise is built around enhancing
+              opportunities, transforming lives, and driving positive change
+              through job creation, education, training, and community
+              engagement. We aim to contribute to a more sustainable and
+              inclusive future while fostering social responsibility in all
+              aspects of our operations.
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- sustainibility -->
-      <section id="sustainibility" class="bg-[var(--light-gray)] py-16">
-        <div class="container md:w-[85%] mx-auto px-4">
-          <div class="w-full">
-            <div class="flex flex-col md:flex-row items-start gap-4">
-              <img 
-                src="images/community/sustainibility.png" 
-                alt="Sustainability at the Core" 
-                class="shadow-md bg-white w-full md:w-[45%] max-h-[500px] object-cover mb-6 md:mb-2 md:ml-8 order-2 md:order-2"
-                style="background: var(--light-bg);"
-              />
-              <div class="text-lg md:text-xl text-[var(--dark-text)] mt-8 md:mt-0">
-                <div class="w-full text-left md:text-left mb-6">
-                  <h1 class="text-3xl md:text-4xl font-semibold relative text-[var(--dark-golden)] inline-block" style="font-family: 'Playfair Display', serif;">
-                    <span class="text-[var(--dark-text)]">Sustainability at the Core</span>
-                    <span class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"></span>
-                  </h1>
-                </div>
-                <p class="mb-6">
-                  We are dedicated to sustainability in every aspect of our business. From responsibly sourcing local ingredients or choosing eco-friendly packaging or reducing waste, we support sustainable practices to the best of our capacity.
-                </p>
-                <ul class="space-y-4 text-lg md:text-xl text-[var(--dark-text)] mb-4">
-                  <li class="flex items-start"><span><span >3000+ </span>trees planted by Foodlinkers through tree plantation drive</span></li>
-                  <li class="flex items-start"><span><span >1000+ </span>tons of organic kitchen waste processed &amp; composted for effective use</span></li>
-                  <li class="flex items-start"><span><span >10% </span>energy conservation achieved by use of energy efficient equipment</span></li>
-                  <li class="flex items-start"><span><span >70+ </span>tons of plastic waste per year prevented by switching to recyclable packaging</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- social responsibility -->
-      <section id="social-responsibility" class="py-16">
-        <div class="container md:w-[85%] mx-auto px-4">
-          <div class="w-full">
+        <!-- our assurance -->
+        <section id="our-assurance" class="py-16 bg-light-bg">
+          <div class="container md:w-[85%] mx-auto grid gap-12 px-4">
             <div class="flex flex-col md:flex-row-reverse items-start gap-4">
-              <img 
-                src="images/community/social-responsibility.png" 
-                alt="Social Responsibility" 
+              <img
+                src="images/community/our-assurance.png"
+                alt="Social Responsibility"
                 class="shadow-md bg-white w-full md:w-[45%] max-h-[500px] object-cover mb-6 md:mb-2 md:mr-8 order-1 md:order-1"
-                style="background: var(--light-bg);"
+                style="background: var(--light-bg)"
               />
-              <div class="text-lg md:text-xl text-[var(--dark-text)] mt-8 md:mt-0">
+              <div
+                class=" text-[var(--dark-text)] para-texts mt-8 md:mt-0"
+              >
                 <div class="w-full text-left md:text-left mb-6">
-                  <h1 class="text-3xl md:text-4xl font-semibold relative text-[var(--dark-golden)] inline-block" style="font-family: 'Playfair Display', serif;">
-                    <span class="text-[var(--dark-text)]">Social Responsibility</span>
-                    <span class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"></span>
+                  <h1
+                    class="text-3xl md:text-4xl font-semibold relative text-[var(--dark-golden)] inline-block"
+                    style="font-family: 'Playfair Display', serif"
+                  >
+                    <span class="text-[var(--dark-text)]">OUR ASSURANCE </span>
+                    <span
+                      class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"
+                    ></span>
                   </h1>
                 </div>
-                <p class="mb-6">
-                  We believe in the transformative power of food to bring people together and create lasting positive change. Our  commitment goes beyond delivering exceptional culinary experiences; it extends to making a meaningful impact on the  communities we serve. Through our Corporate Social Responsibility initiatives, we aim to create long-term value for both  our business and society.
+                <p class="mb-6 ">
+                  At Foodlink, the health and safety of our guests are
+                  paramount. We uphold the highest standards of food safety
+                  through rigorous hygiene protocols and industry-leading
+                  practices in every stage—from sourcing and preparation to
+                  storage and delivery.
                 </p>
-                <p class="mb-6">We have demonstrated our commitment to the welfare of our community through various endeavours like blood donation  drives, tree plantation drives and food distribution programs like </p>
                 <p class="mb-6">
-                  the Khichadi Project (run during the pandemic).  Our CSR initiative, Share A Meal, focuses on combating hunger and malnutrition by providing nutritious, freshly  prepared meals to underprivileged children. For every guest we serve, we distribute an equal number of free meals to the  ones in need.
+                  Our Food Safety Management System is fully compliant with ISO,
+                  HACCP, and FSSAI regulations, ensuring unwavering quality and
+                  safety in every dish we serve.
                 </p>
-                <ul class="space-y-4 text-lg md:text-xl text-[var(--dark-text)] ">
-                  <li class="flex items-start"><span><span >Share a meal:</span> Served <span class="font-bold">50000+ meals</span></span></li>
-                  <li class="flex items-start"><span><span >Khichdi project:</span> <span class="font-bold">25000+ Meals distributed</span> daily during lockdown</span></li>
-                  <li class="flex items-start"><span><span >Blood Donation Drives:</span> <span class="font-bold">20000+ Units of Blood Donated</span></span></li>
-                </ul>
+                <p class="mb-4">
+                  Our culinary team, led by seasoned master chefs, alongside
+                  professionally trained food handlers and meticulous service
+                  staff, is committed to delivering an exceptional dining
+                  experience—with hygiene and food safety at the heart of
+                  everything we do.
+                </p>
+                <div
+                  class="flex w-full gap-4 flex-row flex-wrap items-center justify-center md:justify-start mt-10 mb-8"
+                >
+                  <div class="max-w-[160px] md:max-w-[180px]">
+                    <img
+                      src="images/about/assurance/iso-22000-2018-1 1.png"
+                      alt="assurance-1"
+                      class="w-full object-contain"
+                    />
+                  </div>
+                  <div class="max-w-[110px] md:max-w-[140px]">
+                    <img
+                      src="images/about/assurance/iso-22000-2018-1 2.png"
+                      alt="assurance-1"
+                      class="w-full object-contain"
+                    />
+                  </div>
+                  <div class="max-w-[140px] md:max-w-[170px]">
+                    <img
+                      src="images/about/assurance/iso-22000-2018-1 3.png"
+                      alt="assurance-1"
+                      class="w-full object-contain"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- empowerment -->
-      <section id="empowerment" class="bg-[var(--light-gray)] py-16">
-        <div class="container md:w-[85%] mx-auto px-4">
-          <div class="w-full">
-            <div class="flex flex-col md:flex-row items-start gap-4">
-              <img 
-                src="images/community/empowerment.png" 
-                alt="Sustainability at the Core" 
-                class="shadow-md bg-white w-full md:w-[45%] max-h-[400px] object-cover mb-6 md:mb-2 md:ml-8 order-2 md:order-2"
-                style="background: var(--light-bg);"
-              />
-              <div class="text-lg md:text-xl text-[var(--dark-text)] mt-8 md:mt-0">
-                <div class="w-full text-left md:text-left mb-6">
-                  <h1 class="text-3xl md:text-4xl font-semibold relative text-[var(--dark-golden)] inline-block" style="font-family: 'Playfair Display', serif;">
-                    <span class="text-[var(--dark-text)]">Empowerment</span>
-                    <span class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"></span>
-                  </h1>
+        <!-- sustainibility -->
+        <section id="sustainibility" class="bg-[var(--light-gray)] py-16">
+          <div class="container md:w-[85%] mx-auto px-4">
+            <div class="w-full">
+              <div class="flex flex-col md:flex-row items-start gap-4">
+                <img
+                  src="images/community/sustainibility.jpg"
+                  alt="Sustainability at the Core"
+                  class="shadow-md bg-white w-full md:w-[45%] max-h-[500px] object-cover mb-6 md:mb-2 md:ml-8 order-2 md:order-2"
+                  style="background: var(--light-bg)"
+                />
+                <div
+                  class="para-texts text-[var(--dark-text)] mt-8 md:mt-0"
+                >
+                  <div class="w-full text-left md:text-left mb-6">
+                    <h1
+                      class="text-3xl md:text-4xl font-semibold relative text-[var(--dark-golden)] inline-block"
+                      style="font-family: 'Playfair Display', serif"
+                    >
+                      <span class="text-[var(--dark-text)]"
+                        >Sustainability at the Core</span
+                      >
+                      <span
+                        class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"
+                      ></span>
+                    </h1>
+                  </div>
+                  <p class="mb-6">
+                    We are dedicated to sustainability in every aspect of our
+                    business. From responsibly sourcing local ingredients or
+                    choosing eco-friendly packaging or reducing waste, we
+                    support sustainable practices to the best of our capacity.
+                  </p>
+                  <ul
+                    class="space-y-4 para-texts text-[var(--dark-text)] mb-4"
+                  >
+                    <li class="flex items-start">
+                      <span
+                        ><span class="font-bold">3000+ </span>trees planted by
+                        Foodlinkers through tree plantation drive</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        ><span class="font-bold">1000+ </span>tons of organic
+                        kitchen waste processed &amp; composted for effective
+                        use</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        ><span class="font-bold">10% </span>energy conservation
+                        achieved by use of energy efficient equipment</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        ><span class="font-bold">70+ </span>tons of plastic
+                        waste per year prevented by switching to recyclable
+                        packaging</span
+                      >
+                    </li>
+                  </ul>
                 </div>
-                <p class="mb-6">
-                  At Foodlink, empowerment is more than a value — it's a way of life. We believe in nurturing not just our  people, but also the communities we engage with. Through structured training programs and hands-on  apprenticeships, we equip our team with the skills and confidence to grow, thrive, and lead with purpose. Our commitment extends beyond the workplace. We partner with NGOs that champion the welfare of  artisans and craftspeople, preserving traditional craftsmanship while enabling economic independence. By  uplifting these communities, we help safeguard cultural legacies for generations to come. We also stand by  our farmers — sourcing 
-                </p>
-                <p class="mb-6">
-                  local, seasonal produce to support regional agriculture and deliver fresh,  sustainable ingredients to every plate we serve.
-                </p>
-                <p class="mb-6">
-                  Every initiative we undertake is rooted in connection — growing individuals, honouring heritage, and  strengthening the communities around us.
-                </p>
-                <ul class="space-y-2 text-lg md:text-xl text-[var(--dark-text)] list-none pl-0 mb-4">
-                  <li>Employee Skill Development Programs by offering structured training programmes & apprenticeships</li>
-                  <li>Empowering Local Artisans by supporting local NGOs working towards the welfare of craftsman</li>
-                  <li>Supporting Local Farmers by sourcing local and seasonal produce</li>
-                </ul>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-    </div>
-   </main>
+        <!-- social responsibility -->
+        <section id="social-responsibility" class="py-16">
+          <div class="container md:w-[85%] mx-auto px-4">
+            <div class="w-full">
+              <div class="flex flex-col md:flex-row-reverse items-start gap-4">
+                <img
+                  src="images/community/social-responsibility.JPG"
+                  alt="Social Responsibility"
+                  class="shadow-md bg-white w-full md:w-[45%] max-h-[500px] object-cover mb-6 md:mb-2 md:mr-8 order-1 md:order-1"
+                  style="background: var(--light-bg)"
+                />
+                <div
+                  class="text-[var(--dark-text)] para-texts mt-8 md:mt-0"
+                >
+                  <div class="w-full text-left md:text-left mb-6">
+                    <h1
+                      class="text-3xl md:text-4xl font-semibold relative text-[var(--dark-golden)] inline-block"
+                      style="font-family: 'Playfair Display', serif"
+                    >
+                      <span class="text-[var(--dark-text)]"
+                        >Social Responsibility</span
+                      >
+                      <span
+                        class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"
+                      ></span>
+                    </h1>
+                  </div>
+                  <p class="mb-6">
+                    We believe in the transformative power of food to bring
+                    people together and create lasting positive change. Our
+                    commitment goes beyond delivering exceptional culinary
+                    experiences; it extends to making a meaningful impact on the
+                    communities we serve. Through our Corporate Social
+                    Responsibility initiatives, we aim to create long-term value
+                    for both our business and society.
+                  </p>
+                  <p class="mb-6">
+                    We have demonstrated our commitment to the welfare of our
+                    community through various endeavours like blood donation
+                    drives, tree plantation drives and food distribution
+                    programs like
+                  </p>
+                  <p class="mb-6">
+                    the Khichadi Project (run during the pandemic). Our CSR
+                    initiative, Share A Meal, focuses on combating hunger and
+                    malnutrition by providing nutritious, freshly prepared meals
+                    to underprivileged children. For every guest we serve, we
+                    distribute an equal number of free meals to the ones in
+                    need.
+                  </p>
+                  <ul
+                    class="space-y-4 para-texts text-[var(--dark-text)]"
+                  >
+                    <li class="flex items-start">
+                      <span
+                        ><span class="font-bold">Share a meal:</span> Served
+                        <span class="font-bold">50000+ meals</span></span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        ><span class="font-bold">Khichdi project:</span>
+                        <span class="font-bold">25000+ Meals distributed</span>
+                        daily during lockdown</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        ><span class="font-bold">Blood Donation Drives:</span>
+                        <span class="font-bold"
+                          >20000+ Units of Blood Donated</span
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <script type="module">
-      
-    </script>
+        <!-- empowerment -->
+        <section id="empowerment" class="bg-[var(--light-gray)] py-16">
+          <div class="container md:w-[85%] mx-auto px-4">
+            <div class="w-full">
+              <div class="flex para-texts flex-col md:flex-row items-start gap-4">
+                <img
+                  src="images/community/empowerment.png"
+                  alt="Sustainability at the Core"
+                  class="shadow-md bg-white w-full md:w-[45%] max-h-[400px] object-cover mb-6 md:mb-2 md:ml-8 order-2 md:order-2"
+                  style="background: var(--light-bg)"
+                />
+                <div
+                  class="text-[var(--dark-text)] mt-8 md:mt-0"
+                >
+                  <div class="w-full text-left md:text-left mb-6">
+                    <h1
+                      class="text-3xl md:text-4xl font-semibold relative text-[var(--dark-golden)] inline-block"
+                      style="font-family: 'Playfair Display', serif"
+                    >
+                      <span class="text-[var(--dark-text)]">Empowerment</span>
+                      <span
+                        class="w-full h-[2px] absolute bg-[var(--pure-golden)] top-[105%] left-0"
+                      ></span>
+                    </h1>
+                  </div>
+                  <p class="mb-6">
+                    At Foodlink, empowerment is more than a value — it's a way
+                    of life. We believe in nurturing not just our people, but
+                    also the communities we engage with. Through structured
+                    training programs and hands-on apprenticeships, we equip our
+                    team with the skills and confidence to grow, thrive, and
+                    lead with purpose. Our commitment extends beyond the
+                    workplace. We partner with NGOs that champion the welfare of
+                    artisans and craftspeople, preserving traditional
+                    craftsmanship while enabling economic independence. By
+                    uplifting these communities, we help safeguard cultural
+                    legacies for generations to come. We also stand by our
+                    farmers — sourcing local, seasonal produce to support regional agriculture and
+                    deliver fresh, sustainable ingredients to every plate we
+                    serve.
+                  </p>
+                  <ul
+                    class="space-y-2 para-texts text-[var(--dark-text)] list-none pl-0 mb-4"
+                  >
+                  <li>                    Every initiative we undertake is rooted in connection —
+                    growing individuals, honouring heritage, and strengthening
+                    the communities around us.</li>
+                    <li>
+                      Employee Skill Development Programs by offering structured
+                      training programmes & apprenticeships.
+                    </li>
+                    <li>
+                      Empowering Local Artisans by supporting local NGOs working
+                      towards the welfare of craftsman.
+                    </li>
+                    <li>
+                      Supporting Local Farmers by sourcing local and seasonal
+                      produce.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module"></script>
     <script src="main.js" type="module" defer></script>
   </body>
 </html>

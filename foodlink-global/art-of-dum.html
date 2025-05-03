@@ -17,143 +17,199 @@
 
     <link
       rel="stylesheet"
-      href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
   </head>
   <body class="overflow-x-hidden">
-
     <section
-    class="hero-section h-[25vh] md:h-screen relative overflow-hidden flex items-center justify-center"
-  >
-    <!-- Direct MP4 Video Player with Custom Controls -->
-    <div class="w-full h-full relative">
-      <video
-        id="hero-video"
-        class="w-full h-full object-cover object-center"
-        autoplay
-        loop
-        playsinline
-        muted
-        src="https://stream.adilo.com/adilo-encoding/SaWPjJewiaMlfcEF/U7R_kF5s/1080p.mp4"
-        poster="images/Home page/slide 01.jpg"
-        preload="auto"
+      class="hero-section h-[25vh] md:h-screen relative overflow-hidden flex items-center justify-center"
+    >
+      <!-- Direct MP4 Video Player with Custom Controls -->
+      <div class="w-full h-full relative">
+        <video
+          id="hero-video"
+          class="w-full h-full object-cover object-center"
+          autoplay
+          loop
+          playsinline
+          muted
+          src="https://stream.adilo.com/adilo-encoding/SaWPjJewiaMlfcEF/U7R_kF5s/1080p.mp4"
+          poster="images/Home page/slide 01.jpg"
+          preload="auto"
+        ></video>
+      </div>
+
+      <div
+        class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0"
+      ></div>
+      <div class="superheader">
+        <div>
+          <button>Art of Dum</button>
+          <h1>Where Time Honoured Tradition Meets the <br> Poetry of Slow Cooking</h1>
+        </div>
+      </div>
+
+      <!-- <div
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-[35%] container"
       >
-      </video>
-    </div>
-
-    <div
-    class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0"
-  ></div>
-
-  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-    <h1 class="text-[2.5rem] font-bold text-white font-[Playfair Display] relative z-10  leading-10 max-w-[800px] mx-auto px-4">Where Time Honoured Tradition Meets the Poetry of Slow Cooking</h1>
-  </div>
-  </section>    
+        <h1
+          class="text-[3rem] font-bold text-white font-[Playfair Display] relative z-10 leading-10 mx-auto px-4"
+        >
+          Where Time Honoured Tradition Meets the Poetry of Slow Cooking
+        </h1>
+      </div> -->
+    </section>
 
     <!-- main section -->
-   <main class="w-full py-16 pt-0 min-h-screen">
-    <div class="w-full">
-      <!-- bistro section -->
-       <section class="px-4 py-16 pt-0   bg-[var(--light-gray)]">
-        <div class="w-full container grid gap-6 pt-8 mx-auto">
-            <div class="max-w-[100px] w-full -translate-x-1.5">
-                <img src="images/art_of_dum/image 23 (1).png" alt="art of dum bistro" class="w-full object-contain">
-            </div>
+    <main class="w-full py-16 pt-0 min-h-screen">
+      <div class="w-full">
+        <!-- bistro section -->
+        <section class="py-16 pt-8 bg-[var(--light-gray)]">
+          <div class="container grid gap-6 pt-8 mx-auto">
             <div class="grid lg:grid-cols-2 gap-6">
-                <div class="flex w-full flex-col gap-8">
-                    <p>At Art of Dum, we bring the rich and authentic flavours of Dum Pukht cuisine directly to your doorstep - a culinary tradition  born over 300 years ago in the royal kitchens of the Northwest Frontier Province. Rooted in the rich heritage of undivided  India, our dishes capture the essence of this time-honoured cooking style, where slow-cooked meals in clay pots and  tandoors create an extraordinary depth of flavour. Each preparation is a tribute to the legendary Khansamas, the master  chefs of a bygone era, whose passion for crafting culinary masterpieces has been passed down through  generations. From the aromatic biryanis to the delicately spiced curries, every bite offers a sensory journey through India’s  regal culinary heritage, meticulously handcrafted with patience, precision, and soul.</p>
-                    <p>Our commitment to excellence extends beyond flavour, we believe that every meal should be an experience. Whether  you're hosting friends, celebrating with family, or entertaining business associates, we provide a seamless catering  experience that takes the stress out of entertaining. We cater to stylish boutique gatherings of 25 to 85 guests, ensuring  that every detail is thoughtfully curated and flawlessly executed. From setup to service, our expert team is dedicated to  creating a hassle-free, extraordinary event that your guests will remember long after the last bite</p>
-                    <p class="text-medium"> At Art of Dum, every meal is an experience.</p>
-                    
-                    <a target="_blank" href="https://artofdum.com" class="btn w-fit">
-                        Know More
-                    </a>
+              <div class="flex w-full flex-col justify-center gap-8">
+                <div class="max-w-[100px] w-full -translate-x-1.5">
+                  <img
+                    src="images/art_of_dum/image 23 (1).png"
+                    alt="art of dum bistro"
+                    class="w-full object-contain"
+                  />
                 </div>
-                <div class="grid md:grid-cols-2 gap-2 w-full min-h-[400px]">
-                    <div>
-                        <img src="images/art_of_dum/grid/Rectangle 54 (3).png" alt="art of dum bistro" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <img src="images/art_of_dum/grid/Rectangle 52 (3).png" alt="art of dum bistro" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <img src="images/art_of_dum/grid/Rectangle 53 (4).png" alt="art of dum bistro" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <img src="images/art_of_dum/grid/Rectangle 55 (6).png" alt="art of dum bistro" class="w-full h-full object-cover">
-                    </div>
+                <p>
+                  At Art of Dum, we bring the rich and authentic flavours of Dum
+                  Pukht cuisine directly to your doorstep - a culinary tradition
+                  born over 300 years ago in the royal kitchens of the Northwest
+                  Frontier Province. Rooted in the rich heritage of undivided
+                  India, our dishes capture the essence of this time-honoured
+                  cooking style, where slow-cooked meals in clay pots and
+                  tandoors create an extraordinary depth of flavour. Each
+                  preparation is a tribute to the legendary Khansamas, the
+                  master chefs of a bygone era, whose passion for crafting
+                  culinary masterpieces has been passed down through
+                  generations. From the aromatic biryanis to the delicately
+                  spiced curries, every bite offers a sensory journey through
+                  India’s regal culinary heritage, meticulously handcrafted with
+                  patience, precision, and soul.
+                </p>
+                <p>
+                  Our commitment to excellence extends beyond flavour, we
+                  believe that every meal should be an experience. Whether
+                  you're hosting friends, celebrating with family, or
+                  entertaining business associates, we provide a seamless
+                  catering experience that takes the stress out of entertaining.
+                  We cater to stylish boutique gatherings of 25 to 85 guests,
+                  ensuring that every detail is thoughtfully curated and
+                  flawlessly executed. From setup to service, our expert team is
+                  dedicated to creating a hassle-free, extraordinary event that
+                  your guests will remember long after the last bite
+                </p>
+                <p class="text-medium">
+                  At Art of Dum, every meal is an experience.
+                </p>
+
+                <a
+                  target="_blank"
+                  href="https://artofdum.com"
+                  class="btn w-fit"
+                >
+                  Know More
+                </a>
+              </div>
+              <div class="grid md:grid-cols-2 gap-2 w-full min-h-[400px]">
+                <div>
+                  <img
+                    src="images/art_of_dum/grid/Rectangle 54 (3).png"
+                    alt="art of dum bistro"
+                    class="w-full h-full object-cover"
+                  />
                 </div>
-           
+                <div>
+                  <img
+                    src="images/art_of_dum/grid/Rectangle 52 (3).png"
+                    alt="art of dum bistro"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="images/art_of_dum/grid/Rectangle 53 (4).png"
+                    alt="art of dum bistro"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="images/art_of_dum/grid/Rectangle 55 (6).png"
+                    alt="art of dum bistro"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
 
-       </section>
+        <!-- times images -->
+        <section
+          class="px-4 py-16 pb-0 overflow-hidden container mx-auto aslider-section"
+        >
+          <div class="flex flex-row gap-8 times-images overflow-x-hidden">
+            <div class="w-[280px] times-item">
+              <img
+                src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-01.png"
+                alt="times-img"
+                class="w-full object-contain"
+              />
+            </div>
+            <div class="w-[280px] times-item">
+              <img
+                src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-02.png"
+                alt="times-img"
+                class="w-full object-contain"
+              />
+            </div>
+            <div class="w-[280px] times-item">
+              <img
+                src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-03.png"
+                alt="times-img"
+                class="w-full object-contain"
+              />
+            </div>
+            <div class="w-[280px] times-item">
+              <img
+                src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-04.png"
+                alt="times-img"
+                class="w-full object-contain"
+              />
+            </div>
+            <div class="w-[280px] times-item">
+              <img
+                src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-05.png"
+                alt="times-img"
+                class="w-full object-contain"
+              />
+            </div>
+            <div class="w-[280px] times-item">
+              <img
+                src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-06.png"
+                alt="times-img"
+                class="w-full object-contain"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
-       <!-- times images -->
-       <section class="px-4 py-16 overflow-hidden w-auto container mx-auto">
-        <div class="flex flex-row gap-8 times-images overflow-x-hidden">
-          <div class="w-[280px] times-item">
-            <img src="images/Awards/Art of Dum/AOD Awards-19 (1).png" alt="times-img" class="w-full object-contain">
-          </div>
-          <div class="w-[280px] times-item">
-            <img src="images/Awards/Art of Dum/AOD Awards-20 (1).png" alt="times-img" class="w-full object-contain">
-          </div>
-          <div class="w-[280px] times-item">
-            <img src="images/Awards/Art of Dum/ET Hospitality Restaurants & Nightlife Awards 2024-01.png" alt="times-img" class="w-full object-contain">
-          </div>
-          <div class="w-[280px] times-item">
-            <img src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-01.png" alt="times-img" class="w-full object-contain">
-          </div>
-          <div class="w-[280px] times-item">
-            <img src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-02.png" alt="times-img" class="w-full object-contain">
-          </div>
-          <div class="w-[280px] times-item">
-            <img src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-03.png" alt="times-img" class="w-full object-contain">
-          </div>
-          <div class="w-[280px] times-item">
-            <img src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-04.png" alt="times-img" class="w-full object-contain">
-          </div>
-          <div class="w-[280px] times-item">
-            <img src="images/Awards/Art of Dum/New Award Icons_Art Of Dum-05.png" alt="times-img" class="w-full object-contain">
-          </div>
-        </div>
-       </section>
-
-    </div>
-   </main>
-
-
-
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script type="module">
       import InfiniteHorizontalLoop from './scripts/utils/inifiniteHorizontalLoop.js';
       document.addEventListener('DOMContentLoaded', () => {
-        new InfiniteHorizontalLoop('.times-images', '.times-item', 40);
+        new InfiniteHorizontalLoop('.times-images', '.times-item', 25);
       });
     </script>
     <script>
@@ -168,10 +224,7 @@
       });
     </script>
 
-
     <script src="main.js" type="module" defer></script>
-   
-        <!-- partial -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
   </body>
 </html>
