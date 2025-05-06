@@ -48,11 +48,11 @@ export const navbarTemplate = (mode) => `
           <div class="font-semibold text-base tracking-wide mb-2 capitalize">Foodlink Group</div>
           <li><a href="/about.html#conception" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Conception</a></li>
           <li><a href="/evolution.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Evolution</a></li>
-          <li><a href="/our-footprints.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Footprint</a></li>
+          <li><a href="/footprints.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Footprint</a></li>
           <div class="font-semibold mb-4"></div>
           <li><a href="/about.html#vision-mission" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Vision & Mission</a></li>
           <li><a href="/value-framework.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Value Framework</a></li>
-          <li><a href="/our-founder.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Founder</a></li>
+          <li><a href="/founder.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Founder</a></li>
           <div class="font-semibold mb-4"></div>
           <li><a href="/leadership.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Leadership</a></li>
           <li><a href="/infrastructure.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Infrastructure</a></li>
@@ -139,7 +139,7 @@ export const navbarTemplate = (mode) => `
               <ul class="space-y-1 text-sm font-light tracking-wide capitalize text-gray-200">
                 <li><a href="/about.html#conception" class="hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Conception</a></li>
                 <li><a href="/evolution.html" class="hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Evolution</a></li>
-                <li><a href="/our-footprints.html" class="hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Footprint</a></li>
+                <li><a href="/footprints.html" class="hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Footprint</a></li>
               </ul>
             </div>
             <div>
@@ -147,7 +147,7 @@ export const navbarTemplate = (mode) => `
               <ul class="space-y-1 text-sm font-light tracking-wide capitalize text-gray-200">
                 <li><a href="/about.html#vision-mission" class="hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Vision & Mission</a></li>
                 <li><a href="/value-framework.html" class="hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Value Framework</a></li>
-                <li><a href="/our-founder.html" class="hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Founder</a></li>
+                <li><a href="/founder.html" class="hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Founder</a></li>
               </ul>
             </div>
             <div>

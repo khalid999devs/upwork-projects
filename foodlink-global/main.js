@@ -1,6 +1,11 @@
 import { navbarTemplate } from "./scripts/templates/nav.js";
 import { footerTemplate } from "./scripts/templates/footer.js";
-// Initialize AOS (Animate On Scroll) - will be initialized via HTML after load
+import Lenis from "lenis";
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+lenis.on('scroll', (e) => {});
 
 function navBarEventsSetup(){
 // Navbar scroll effect with throttling for better performance

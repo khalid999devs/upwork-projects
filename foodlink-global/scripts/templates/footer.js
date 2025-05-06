@@ -18,10 +18,10 @@ export const footerTemplate = () => `    <footer
             <ul class="text-gray-700 !space-y-[4px] mt-4">
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/about.html#conception" class="!text-[var(--dark-text)]">Conception</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/evolution.html" class="!text-[var(--dark-text)]">Evolution</a></li>
-              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/our-footprints.html" class="!text-[var(--dark-text)]">Footprint</a></li>
+              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/footprints.html" class="!text-[var(--dark-text)]">Footprint</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/about.html#vision-mission" class="!text-[var(--dark-text)]">Vision & Mission</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/value-framework.html" class="!text-[var(--dark-text)]">Value Framework</a></li>
-              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/our-founder.html" class="!text-[var(--dark-text)]">Founder</a></li>
+              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/founder.html" class="!text-[var(--dark-text)]">Founder</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/leadership.html" class="!text-[var(--dark-text)]">Leadership</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/infrastructure.html" class="!text-[var(--dark-text)]">Infrastructure</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/investors.html#our-assurance" class="!text-[var(--dark-text)]">Investors</a></li>

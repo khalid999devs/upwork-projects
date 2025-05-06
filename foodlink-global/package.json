@@ -16,6 +16,7 @@
     "vite": "^6.3.3"
   },
   "dependencies": {
-    "foodlink-global": "file:"
+    "foodlink-global": "file:",
+    "lenis": "^1.3.1"
   }
 }
