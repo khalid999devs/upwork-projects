@@ -20,12 +20,12 @@
     <!-- Hero Section -->
     <section
       class="hero-section min-h-screen relative overflow-hidden flex items-end justify-center bg-black/70 bg-cover pb-8"
-      style="background-image: url('images/leadership/leadership-banner.jpg')"
+      style="background-image: url('images/leadership/leadership-banner.jpg');background-position:bottom center; "
     >
-    <div class="superheader">
+    <div class="superheader !max-w-[1020px]">
       <div>
         <button>Leadership</button>
-        <h1>Empowering leadership that drives growth, inspires innovation, and fosters a culture of collaboration at Foodlink</h1>
+        <h1>Empowering Leadership that Drives Growth, Inspires Innovation, and Fosters a Culture of Collaboration at Foodlink</h1>
       </div>
     </div>
       <div
@@ -103,11 +103,6 @@
           .map(function (leader, i) {
             return `
             <div class="flex flex-col items-center text-center bg-white shadow-md glow-shadow relative">
-              ${
-                i === 0
-                  ? `<div class="headingDiv"><h2 class="text-2xl font-semibold tracking-wide">Leadership</h2></div>`
-                  : ''
-              }
               <img src="${
                 leader.image
               }" alt="${leader.title}" class="w-full max-h-[280px] sm:min-h-[130px] object-cover" />

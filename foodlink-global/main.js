@@ -1,11 +1,23 @@
 import { navbarTemplate } from "./scripts/templates/nav.js";
 import { footerTemplate } from "./scripts/templates/footer.js";
 import Lenis from "lenis";
-const lenis = new Lenis({
-  autoRaf: true,
+
+window.addEventListener('load', () => {
+  const lenis = new Lenis({
+    autoRaf: true,
+  });
+
+  // Observe layout changes and notify Lenis to recalculate
+  const observer = new ResizeObserver(() => {
+    lenis.resize();
+  });
+  observer.observe(document.body);
+
+  // Optional: Handle scroll events
+  // lenis.on('scroll', (e) => {});
 });
 
-lenis.on('scroll', (e) => {});
+
 
 function navBarEventsSetup(){
 // Navbar scroll effect with throttling for better performance

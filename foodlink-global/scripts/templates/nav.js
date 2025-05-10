@@ -1,7 +1,7 @@
 // scripts/templates/nav.js
 // Export a template string containing the navbar, submenus, and extension container
 export const navbarTemplate = (mode) => `
-  <nav class="fixed w-full z-50 bg-transparent transition-all duration-300 ${
+  <nav data-lenis-prevent class="fixed w-full z-50 bg-transparent transition-all duration-300 ${
     mode === 'black' ? '!bg-black' : ''
   } !opacity-100" id="navbar">
     <div class="container mx-auto px-4">
@@ -71,8 +71,8 @@ export const navbarTemplate = (mode) => `
           <li><a href="/art-of-dum.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Art of Dum</a></li>
           <div class="font-semibold text-base tracking-wide mt-8 mb-3 capitalize">Business Verticals</div>
           <li><a href="/luxury-event-catering.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Luxury Event Catering</a></li>
-          <li><a href="/restaurant-and-cloud-kitchen.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Restaurants & Cloud Kitchens</a></li>
           <li><a href="/luxury-banquets-and-conventions.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Luxury Banquets & Conventions</a></li>
+          <li><a href="/restaurant-and-cloud-kitchen.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Restaurants & Cloud Kitchens</a></li>
           <li><a href="/integrated-fnb-services.html" class="block py-2 pb-0 font-light hover:text-[var(--golden)]  transition-colors">Integrated F&B Services</a></li>
         </ul>
         <button class="mobile-menu-toggle flex justify-between items-center w-full py-2 px-2 text-lg font-normal focus:outline-none" aria-expanded="false" data-target="mobile-submenu-community">
@@ -159,7 +159,7 @@ export const navbarTemplate = (mode) => `
               </ul>
             </div>
           </div>
-          <div class="mt-8">
+         <!-- <div class="mt-8">
             <div class="font-semibold text-base tracking-wide mb-2 capitalize">Investors</div>
             <div class="grid grid-cols-3 gap-12 text-sm">
               <div>
@@ -172,7 +172,7 @@ export const navbarTemplate = (mode) => `
                 <div class="capitalize hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Test</div><div class="capitalize hover:underline underline-offset-4 decoration-[var(--golden)] cursor-pointer">Test</div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

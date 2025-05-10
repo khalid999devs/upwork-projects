@@ -9,6 +9,7 @@
   --dark-bg: #1a1a1a;
   --pure-golden: #be902e;
   --light-gray: #ebebeb;
+  --ash-gray:#727272;
 }
 
 @layer components {
@@ -288,7 +289,7 @@ p {
 }
 
 .nav-scrolled {
-  background-color: var(--dark-bg) !important; /* Changed to black */
+  background-color: rgb(0,0,0)!important; /* Changed to black */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 

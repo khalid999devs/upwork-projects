@@ -37,6 +37,7 @@ export const footerTemplate = () => `    <footer
               Business
             </h4>
             <ul class="text-gray-700 !space-y-[4px] mt-4">
+              <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/business-overview.html" class="!text-[var(--dark-text)]">Business Overview</a></li>            
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/luxury-event-catering.html" class="!text-[var(--dark-text)]">Luxury Event Catering</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/luxury-banquets-and-conventions.html" class="!text-[var(--dark-text)]">Luxury Banquets and Conventions</a></li>
               <li class="hover:underline underline-offset-4 cursor-pointer"><a href="/restaurant-and-cloud-kitchen.html" class="!text-[var(--dark-text)]">Restaurants and Cloud Kitchens</a></li>
@@ -145,18 +146,18 @@ export const footerTemplate = () => `    <footer
             <!-- Center: Social & Newsletter -->
             <div class="flex flex-col gap-3 mb-4">
               <div class="flex items-center gap-4">
-                <a href="#" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/foodlinkservicesindia" target="_blank" aria-label="LinkedIn">
                   <i class="fa-brands fa-linkedin-in text-3xl"></i>
                 </a>
-                <a href="#" aria-label="YouTube">
+                <a href="https://www.youtube.com/@foodlinkglobal" target="_blank" aria-label="YouTube">
                   <i class="fa-brands fa-youtube text-3xl"></i>
                 </a>
               </div>
             </div>
             <!-- Bottom: Logo -->
-            <div class="w-full flex justify-start mt-10 -ml-3.5">
+            <div class="w-full flex justify-start mt-10 -ml-3.5 px-3">
               <img
-                src="images/Home page/logos/food-link-big.png"
+                src="images/footer-logo.png"
                 alt="Food &amp; Link"
                 class="h-12 md:h-14 object-contain"
               />
