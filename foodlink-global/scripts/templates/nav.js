@@ -1,7 +1,7 @@
 // scripts/templates/nav.js
 // Export a template string containing the navbar, submenus, and extension container
 export const navbarTemplate = (mode) => `
-  <nav data-lenis-prevent class="fixed w-full z-50 bg-transparent transition-all duration-300 ${
+  <nav data-lenis-prevent class="fixed w-full !z-50 bg-transparent transition-all duration-300 ${
     mode === 'black' ? '!bg-black' : ''
   } !opacity-100" id="navbar">
     <div class="container mx-auto px-4">

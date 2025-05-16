@@ -3,29 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Integrated F&B Services - FoodLink Global</title>
+    <title>Newsroom - FoodLink Global</title>
     <script src="https://cdn.tailwindcss.com" defer></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/utils.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <style>
     @media (max-width: 768px) {
-      #mediaReleasePopup , #mediaReleasePopup .md\:p-12 { padding: 1.25rem !important; padding-top: 0 !important; }
-      #mediaReleasePopup h2 { font-size: 1.35rem !important; }
-      #mediaReleasePopup .grid { grid-template-columns: 1fr !important; }
+      #mediaReleasePopup,
+      #mediaReleasePopup .md\:p-12 {
+        padding: 1.25rem !important;
+        padding-top: 0 !important;
+      }
+      #mediaReleasePopup h2 {
+        font-size: 1.35rem !important;
+      }
+      #mediaReleasePopup .grid {
+        grid-template-columns: 1fr !important;
+      }
     }
-    #mediaReleasePopup .scrollbar-thin { scrollbar-width: thin; }
-    #mediaReleasePopup .scrollbar-thumb-\[\#c2994b\]\/70::-webkit-scrollbar-thumb { background: #c2994bb3; }
+    #mediaReleasePopup .scrollbar-thin {
+      scrollbar-width: thin;
+    }
+    #mediaReleasePopup
+      .scrollbar-thumb-\[\#c2994b\]\/70::-webkit-scrollbar-thumb {
+      background: #c2994bb3;
+    }
   </style>
   <body class="overflow-x-hidden">
-
     <!-- Hero Section -->
     <section
       class="hero-section min-h-screen relative overflow-hidden flex items-center justify-center bg-black/70 bg-cover"
@@ -35,28 +47,50 @@
         class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0"
       ></div>
       <div class="superheader">
-        <div> 
+        <div>
           <button>Newsroom</button>
           <h1>In the Headlines</h1>
         </div>
       </div>
-      
-  <!-- <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-    <h1 class="text-[3rem] mx-auto font-bold text-white font-[Playfair Display] relative z-10  leading-10 max-w-[800px] px-4">Newsroom</h1>
-  </div> -->
     </section>
 
     <!-- main section -->
-   <main class="w-full pt-0">
-    <div class="w-full">
-
-  <!-- Newsroom Content -->
-  <div class="relative flex flex-col md:flex-row gap-6 md:gap-8 justify-center items-start md:items-stretch container mx-auto px-4 py-16">
-    
-    <!-- Media Release -->
-    <div id="media-release" class="bg-white relative shadow-lg flex-1 min-w-[280px] max-w-xl w-full p-8 md:p-10" style="box-shadow:0 2px 16px #0002; color:var(--dark-text);">
+    <main class="w-full pt-0">
+      <!-- newsroom posts -->
+      <div class="w-full py-16 pb-0">
         <div
-        class="news-label bg-gray-200 absolute -top-6 -left-3 z-10 px-6 py-2.5 bg-opacity-60 backdrop-blur-6"
+          class="container px-4 mx-auto grid gap-6 md:gap-6 lg:gap-8 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 news-posts-container"
+        >
+          <!-- <a href="#" class="w-full min-h-[350px] bg-white relative per-news-post-item cursor-pointer transition-all duration-500 hover:scale-[1.01]">
+        <div
+        class="headingDiv"
+        >
+         <h2 class="text-xl font-semibold tracking-wide">Newsroom</h2>
+        </div>
+        <div class="max-h-[250px] h-full w-full news-post-caurosel-container relative">
+          <img src="images/newsroom/banner.jpg" class="w-full h-full object-cover news-post-caurosel-item" alt="">
+          <div class="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.6)] to-transparent"></div>
+        </div>
+        <div class="w-full flex flex-col py-4 pr-2 gap-3 font-[600]">
+          <p>2025</p>
+          <p>Art of Dum Opens in Kamala Mills, Mumbai</p>
+        </div>
+      </a> -->
+        </div>
+
+        <div class="w-full mt-8 flex items-center justify-center more-post-btn">
+          <button class="btn cursor-pointer">Load More</button>
+        </div>
+      </div>
+
+      <!-- Newsroom Content -->
+      <div
+        class="relative flex flex-col md:flex-row gap-4 md:gap-4 justify-center items-start md:items-stretch container mx-auto px-4 py-16"
+      >
+        <!-- Media Release -->
+        <!-- <div id="media-release" class="bg-white relative shadow-lg flex-1 min-w-[280px] max-w-xl w-full p-8 md:p-10" style="box-shadow:0 2px 16px #0002; color:var(--dark-text);">
+      <div
+        class="headingDiv"
       >
         <h2 class="text-xl font-semibold tracking-wide">Newsroom</h2>
       </div>
@@ -73,26 +107,102 @@
   <span>Read More</span>
   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
 </button>
-    </div>
+    </div> -->
 
-    <!-- Media Library -->
-    <div id="media-library" class="flex-1 min-w-[280px] max-w-xl w-full shadow-lg p-8 md:p-10" style="background:linear-gradient(to bottom, var(--dark-bg), #232323 60%, var(--golden)); color:var(--light-text); box-shadow:0 2px 16px #0002;">
-      <h2 class="text-2xl font-semibold mb-4">Media Library</h2>
-      <ul class="space-y-2 list-disc pl-6" style="--tw-list-bullet-color: var(--golden);">
-        <li><a href="#" class="underline" style="color:var(--golden);">Company Logo</a></li>
-        <li><a href="#" class="underline" style="color:var(--golden);">Company Profile</a></li>
-        <li><a href="#" class="underline" style="color:var(--golden);">Brands Logo</a></li>
-        <li class="mt-6 font-medium">Sanjay Vazirani
-          <ul class="list-disc space-y-2 pl-6 mt-1">
-            <li><a href="#" class="underline" style="color:var(--golden);">Profile</a></li>
-            <li><a href="#" class="underline" style="color:var(--golden);">Image</a></li>
+        <!-- Media Library -->
+        <div
+          id="media-library"
+          class="flex-1 max-w-xl w-full shadow-lg p-8 md:p-10 relative min-h-[320px]"
+          style="
+            background: linear-gradient(
+              to bottom,
+              var(--dark-bg),
+              #232323 60%,
+              var(--golden)
+            );
+            color: var(--light-text);
+            box-shadow: 0 2px 16px #0002;
+          "
+        >
+          <div class="headingDiv">
+            <h2 class="text-xl font-semibold tracking-wide">Media Library</h2>
+          </div>
+          <h2 class="text-2xl font-semibold mb-4">Company</h2>
+          <ul class="space-y-3 list-none pl-1">
+            <li>
+              <a href="downloads/foodlink_logo.png" download="Foodlink Logo.png"  class="underline" style="color: var(--golden)"
+                >Company Logo</a
+              >
+            </li>
+            <li>
+              <a href="#" class="underline" style="color: var(--golden)"
+                >Company Profile</a
+              >
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- Social Footer -->
-  <div id="social-media" class="w-full py-16" style="background:var(--light-bg);">
+        </div>
+
+        <div
+          id="media-library"
+          class="flex-1 max-w-xl w-full shadow-lg p-8 md:p-10 min-h-[320px]"
+          style="
+            background: linear-gradient(
+              to bottom,
+              var(--dark-bg),
+              #232323 60%,
+              var(--golden)
+            );
+            color: var(--light-text);
+            box-shadow: 0 2px 16px #0002;
+          "
+        >
+          <h2 class="text-2xl font-semibold mb-4">Our Brand</h2>
+          <ul class="space-y-2 list-none pl-1">
+            <li>
+              <a href="downloads/brand-logos.zip" download="Brands Logo.zip" class="underline" style="color: var(--golden)"
+                >Brands Logo</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="media-library"
+          class="flex-1 max-w-xl w-full shadow-lg p-8 md:p-10 min-h-[320px]"
+          style="
+            background: linear-gradient(
+              to bottom,
+              var(--dark-bg),
+              #232323 60%,
+              var(--golden)
+            );
+            color: var(--light-text);
+            box-shadow: 0 2px 16px #0002;
+          "
+        >
+          <h2 class="text-2xl font-semibold mb-4">Founder</h2>
+          <ul class="space-y-1 list-none">
+            <li class="text-lg font-medium">
+              Sanjay Vazirani
+              <ul class="list-none space-y-3 pl-2 pt-2 mt-1">
+                <li>
+                  <a href="#" class="underline text-base" style="color: var(--golden)"
+                    >Profile</a
+                  >
+                </li>
+                <li>
+                  <a href="downloads/Sanjay Vazirani.jpg" download="Sanjay Vazirani.jpg" class="underline text-base" style="color: var(--golden)"
+                    >Image</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Footer -->
+      <div id="social-media" class="w-full py-16" style="background:var(--light-bg);">
     <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
       <div class="">
         <div class="bg-white rounded-2xl shadow-lg p-4 md:p-6 flex flex-col items-center w-full max-w-[400px] max-h-[350px]">
@@ -105,15 +215,48 @@
         </div>
       </div>
     </div>
-  
-  
-  </div>
-              
-  
-   </main>
+   </div> 
+
+      <!-- social icons -->
+      <!-- <div class="w-full">
+        <div class="container py-16 mx-auto px-4 bg-[var(--light-gray)]">
+          <div class="flex items-center justify-center flex-wrap flex-row gap-6 md:gap-24 lg:gap-32">
+            <a
+            href="#"
+            target="_blank"
+            class="flex items-center w-14 justify-center rounded-xl text-2xl bg-[rgba(0,0,0,.05)] p-4 hover:bg-[var(--golden)] hover:text-white transition-all duration-500"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+          href="#"
+          target="_blank"
+          class="flex items-center w-14 justify-center rounded-xl text-2xl bg-[rgba(0,0,0,.05)] p-4 hover:bg-[var(--golden)] hover:text-white transition-all duration-500"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+            <a
+              href="https://www.linkedin.com/company/foodlinkservicesindia"
+              target="_blank"
+              class="flex items-center w-14 justify-center rounded-xl text-2xl bg-[rgba(0,0,0,.05)] p-4 hover:bg-[var(--golden)] hover:text-white transition-all duration-500"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              class="flex items-center w-14 justify-center rounded-xl text-2xl bg-[rgba(0,0,0,.05)] p-4 hover:bg-[var(--golden)] hover:text-white transition-all duration-500"
+            >
+            <i class="fa-solid fa-x"></i>
+            </a>
+          </div>
+        </div>
+      </div> -->
+    </main>
 
     <!-- Media Release Popup -->
-    <div data-lenis-prevent id="mediaReleasePopup" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm hidden">
+    <!-- <div data-lenis-prevent id="mediaReleasePopup" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm hidden">
       <div class="relative rounded-xl shadow-2xl max-w-3xl w-[95vw] max-h-[90vh] overflow-hidden flex flex-col pb-1" style="background: var(--light-text);">
         <div class="flex items-center justify-between gap-4 p-8 !px-5 pb-4 md:!pb-2 pt-6 md:!px-12 w-full">
           <h2 class="text-2xl md:text-3xl font-semibold m-0" style="color: var(--golden);">Media Releases</h2>
@@ -175,11 +318,11 @@
         </div>
       </div>
 
-    </div>
+    </div> -->
 
-
-    
+    <script type="module" src="./scripts/pages/newsroom.js"></script>
     <script src="main.js" type="module" defer></script>
-    <script src="./scripts/media-release-popup.js" type="module" defer></script>
+    <!-- <script src="./scripts/utils/media-release-popup.js" type="module" defer></script> -->
+
   </body>
 </html>

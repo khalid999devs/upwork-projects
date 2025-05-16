@@ -96,19 +96,46 @@
     <script src="main.js" type="module" defer></script>
     <script type="module">
       import { leaders } from './scripts/contents/leadership.js';
-      document.addEventListener('DOMContentLoaded', () => {
-        var container = document.querySelector('.leadership-container');
+      import { createSpinnerLoader } from './scripts/templates/loaders.js';
+      import { htmlToFragment } from './scripts/utils/htmlConvertionUtils.js';
+      import client from './scripts/utils/kernexClient.js';
+
+      document.addEventListener('DOMContentLoaded',async () => {
+        const container = document.querySelector('.leadership-container');
         if (!container) return;
-        container.innerHTML = leaders
+        
+        const spinnerEl=createSpinnerLoader().firstElementChild;
+        container.appendChild(spinnerEl);
+
+        const response=await client.resource('leaders').find({
+          "$limit": 50,
+          "$skip": 0,
+        "$sort": {
+          "createdAt": 1
+        },
+        "$select": [
+          "_id",
+          "createdAt",
+          "updatedAt",
+          "fullName",
+          "image",
+          "designation"
+        ]
+      })
+
+      const leaders=response.data || [];
+      
+      if(leaders.length){
+        const itemsHTML=leaders
           .map(function (leader, i) {
             return `
-            <div class="flex flex-col items-center text-center bg-white shadow-md glow-shadow relative">
+            <div class="flex flex-col items-center text-center bg-white shadow-md glow-shadow relative" id=${leader._id} key=${leader._id}>
               <img src="${
-                leader.image
-              }" alt="${leader.title}" class="w-full max-h-[280px] sm:min-h-[130px] object-cover" />
+                leader.image.url
+              }" alt="${leader.fullName}" class="w-full max-h-[280px] sm:min-h-[130px] object-cover" />
               <div class="px-2 flex flex-col gap-1 w-full pt-3 pb-5">
                 <p class="text-base font-semibold text-[var(--golden)]">${
-                  leader.title
+                  leader.fullName
                 }</p>
                 <p class="text-sm text-gray-900">${leader.designation}</p>
               </div>
@@ -116,6 +143,13 @@
           `;
           })
           .join('');
+
+          const ImageFragment=htmlToFragment(itemsHTML)
+          container.removeChild(spinnerEl);
+          container.appendChild(ImageFragment);
+      }else{
+        container.removeChild(spinnerEl);
+      }
       });
     </script>
 

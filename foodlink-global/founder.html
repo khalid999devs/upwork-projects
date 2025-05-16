@@ -131,7 +131,7 @@
         <!-- times images -->
         <section class="px-4 overflow-hidden aslider-section container mx-auto">
           <div class="flex flex-row gap-8 times-images overflow-x-hidden">
-            <div class="w-[280px] times-item">
+            <!-- <div class="w-[280px] times-item">
               <img
                 src="images/chairman/1.png"
                 alt="times-img"
@@ -186,7 +186,7 @@
                 alt="times-img"
                 class="w-full object-contain"
               />
-            </div>
+            </div> -->
           </div>
         </section>
       </div>
@@ -196,7 +196,10 @@
     <script src="main.js" type="module" defer></script>
     <script type="module">
       import InfiniteHorizontalLoop from './scripts/utils/inifiniteHorizontalLoop.js';
-      document.addEventListener('DOMContentLoaded', () => {
+      import { fetchSetAwardsAsync } from './scripts/pages/brandsBistro.js';
+
+      document.addEventListener('DOMContentLoaded', async () => {
+        await fetchSetAwardsAsync('.times-images','founder')
         new InfiniteHorizontalLoop('.times-images', '.times-item', 30);
       });
     </script>

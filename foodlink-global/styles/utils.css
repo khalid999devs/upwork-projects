@@ -39,3 +39,20 @@
   border: 0.5px solid rgba(0, 0, 0, 0.3);
   border-left: none;
 }
+
+/* footprint map fixes */
+.map-container {
+  position: relative;
+}
+.map-pin {
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+  width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .map-pin {
+    width: 15px;
+  }
+}

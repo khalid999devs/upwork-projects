@@ -160,13 +160,13 @@
               </div>
             </div>
             <div
-              class="carousel-controls absolute bottom-4 left-[50%] -translate-x-1/2 lg:-translate-x-0 lg:left-8 mt-4"
+              class="carousel-controls absolute w-full bottom-4 left-[0%]"
             >
               <button
                 class="hidden lg:flex gallery-prev-btn bg-gray-200 hover:bg-gray-300 rounded-full opacity-0 w-10 h-10 items-center justify-center"
                 aria-label="Previous slide"
               ></button>
-              <div class="carousel-dots gallery-dots"></div>
+              <div class="gallery-dots"></div>
               <button
                 class="hidden lg:flex gallery-next-btn bg-gray-200 hover:bg-gray-300 rounded-full opacity-0 w-10 h-10 items-center justify-center"
                 aria-label="Next slide"
@@ -218,9 +218,9 @@
               <!-- Text-Image Item 2 -->
               <div class="text-image-item">
                 <div
-                  class="text-image-content text-center flex items-center justify-center z-10"
+                  class="text-image-content text-center flex items-center justify-center z-10 transition-all duration-500 hover:bg-[var(--ash-gray)] cursor-pointer"
                 >
-                  <div class="w-[300px] p-4 inset-0 bg-black/60">
+                  <div class="w-[300px] p-4 inset-0">
                     <img
                       src="images/business-overview/logos/2.png"
                       alt="small-logo"
@@ -239,9 +239,9 @@
               <!-- Text-Image Item 1 -->
               <div class="text-image-item">
                 <div
-                  class="text-image-content text-center flex items-center justify-center z-10"
+                  class="text-image-content text-center flex items-center justify-center z-10 transition-all duration-500 hover:bg-[var(--ash-gray)] cursor-pointer"
                 >
-                  <div class="w-[300px] p-4 inset-0 bg-black/60">
+                  <div class="w-[300px] p-4 inset-0">
                     <img
                       src="images/business-overview/logos/1.png"
                       alt="small-logo"
@@ -260,9 +260,9 @@
               <!-- Text-Image Item 4 -->
               <div class="text-image-item">
                 <div
-                  class="text-image-content text-center flex items-center justify-center z-10"
+                  class="text-image-content text-center flex items-center justify-center z-10 transition-all duration-500 hover:bg-[var(--ash-gray)] cursor-pointer"
                 >
-                  <div class="w-[300px] p-4 inset-0 bg-black/60">
+                  <div class="w-[300px] p-4 inset-0">
                     <img
                       src="images/business-overview/logos/4.png"
                       alt="small-logo"
@@ -281,9 +281,9 @@
               <!-- Text-Image Item 3 -->
               <div class="text-image-item">
                 <div
-                  class="text-image-content text-center flex items-center justify-center z-10"
+                  class="text-image-content text-center flex items-center justify-center z-10 transition-all duration-500 hover:bg-[var(--ash-gray)] cursor-pointer"
                 >
-                  <div class="w-[300px] p-4 inset-0 bg-black/60">
+                  <div class="w-[300px] p-4 inset-0">
                     <img
                       src="images/business-overview/logos/3.png"
                       alt="small-logo"
@@ -299,7 +299,7 @@
                 />
               </div>
             </div>
-            <div class="carousel-dots text-image-dots"></div>
+            <div class="text-image-dots"></div>
           </div>
         </div>
       </div>
@@ -654,14 +654,14 @@
     </div> -->
 
     <!-- timeline-bg -->
-    <section class="w-full overflow-hidden relative">
+    <section class="w-full h-screen lg:h-auto overflow-hidden relative">
       <a href="/evolution.html" class="group">
         <img
           src="images/Evolution-banner.jpg"
-          class="w-full h-screen md:h-full object-cover md:object-contain transition-all duration-1000 cursor-pointer group-hover:scale-[101%]"
+          class="w-full h-screen md:h-full !object-cover lg:object-contain transition-all duration-1000 cursor-pointer group-hover:scale-[101%]"
           alt=""
         />
-        <div class="w-max absolute left-1/2 -translate-x-[46%] bottom-[10%] sm:bottom-[2%] text-left flex flex-col px-4 z-20 banner-text-contents gap-2 sm:gap-4">
+        <div class="w-max absolute left-1/2 -translate-x-[46%] bottom-[10%] sm:bottom-[2%] text-left flex flex-col px-4 z-20 banner-text-contents gap-2 ">
           <button
           class="px-6 cursor-default py-2.5 text-[var(--dark-golden)] bg-[var(--dark-bg)] text-lg leading-relaxed w-fit font-semibold sm:translate-y-8 "
         >
@@ -670,7 +670,7 @@
         <div
         class="text-3xl md:text-[3rem] font-bold flex items-center font-playfair-display relative z-10 leading-10 whitespace-normal break-words max-w-full min-w-0"
       >
-        <h2 class="block max-w-[95%] break-words break-all whitespace-normal sm:text-4xl md:text-[3rem]" style="word-break: break-word; overflow-wrap: anywhere;">A Journey Etched in Elegance</h2>
+        <h2 class="block max-w-[95%] break-words break-all whitespace-normal text-3xl sm:text-4xl md:text-[3rem]" style="word-break: break-word; overflow-wrap: anywhere;">A Journey Etched in Elegance</h2>
         <div class="hidden sm:block max-w-[150px] translate-y-[5%] -translate-x-[15%]">
           <img src="icons/right-triple-arrow.png" alt="right-arrow" class="w-full" />
         </div>
@@ -752,7 +752,7 @@
               <div class="absolute inset-0 bg-black/30"></div>
               <div class="z-10 flex flex-col justify-center items-start gap-6">
                 <h3 class="text-xl text-white uppercase">For Employees</h3>
-                <div class="p-4 bg-[var(--dark-bg)] text-white max-w-[500px]">
+                <div class="p-4 bg-black/55 text-white max-w-[500px]">
                   <h2
                     class="text-3xl mt-3 mb-4 font-medium leading-tight !text-white"
                   >
@@ -899,6 +899,7 @@
     <!-- Gallery video section -->
   <section
     class="hero-section h-screen relative"
+    title="Food Parade"
   >
     <div class="w-full h-screen relative">
       <video
@@ -910,12 +911,19 @@
         muted
         src="https://adilo.bigcommand.com/6170a946-6dab-4c42-b8a4-7a74285a0257.mp4"
         preload="auto"
+        title="Food Parade"
       ></video>
     </div>
 
     <div
       class="bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent absolute inset-0"
     ></div>
+    <div class="superheader">
+      <div>
+        <button>Food Parade</button>
+        <h1>The Runway Where Fashion Met Flavour</h1>
+      </div>
+    </div>
   </section>
     
     <!-- Video Control Script -->

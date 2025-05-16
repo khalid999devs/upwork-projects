@@ -164,7 +164,7 @@
           class="px-4 py-16 pb-0 overflow-hidden aslider-section container mx-auto"
         >
           <div class="flex flex-row gap-8 times-images overflow-x-hidden">
-            <div class="w-[280px] times-item">
+            <!-- <div class="w-[280px] times-item">
               <img
                 src="images/Awards/Glocal/1.png"
                 alt="times-img"
@@ -205,7 +205,7 @@
                 alt="times-img"
                 class="w-full object-contain"
               />
-            </div>
+            </div> -->
           </div>
         </section>
       </div>
@@ -215,7 +215,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script type="module">
       import InfiniteHorizontalLoop from './scripts/utils/inifiniteHorizontalLoop.js';
-      document.addEventListener('DOMContentLoaded', () => {
+      import { fetchSetAwardsAsync } from './scripts/pages/brandsBistro.js';
+      document.addEventListener('DOMContentLoaded', async() => {
+        await fetchSetAwardsAsync('.times-images','glocal')
         new InfiniteHorizontalLoop('.times-images', '.times-item', 25);
       });
     </script>

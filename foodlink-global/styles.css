@@ -111,7 +111,7 @@ p {
 } */
 
 /* superheader */
-.superheader {
+/* .superheader {
   max-width: 1000px;
   text-align: left;
   display: flex;
@@ -161,8 +161,58 @@ p {
   z-index: 10;
   line-height: 3rem;
   text-shadow: 1.5px 1.5px 4px #000;
+} */
+
+.superheader {
+  max-width: 1140px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 20;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom:8%;
+  width: 100%;
 }
 
+.superheader div{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.superheader button {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  cursor: default;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  color: var(--dark-golden);
+  background-color: var(--dark-bg);
+  font-size: 1rem;
+  line-height: 1.625;
+  width: fit-content;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize!important;
+  font-style: italic;
+}
+
+.superheader h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  z-index: 10;
+  line-height: 3.8rem;
+  /* text-shadow: 1.5px 1.5px 4px #000; */
+}
 
 
 .labelHeader{
@@ -944,10 +994,11 @@ footer .logo-container img {
 
 .gallery-dots {
   position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
+  gap: 0.7rem;
   justify-content: center;
   z-index: 10;
 }
@@ -1016,6 +1067,7 @@ footer .logo-container img {
   left: 0;
   right: 0;
   display: flex;
+  gap: 0.5rem;
   justify-content: center;
   z-index: 10;
 }

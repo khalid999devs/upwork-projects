@@ -16,7 +16,10 @@
     "vite": "^6.3.3"
   },
   "dependencies": {
+    "@kernex/client": "^1.0.1",
+    "dotted-map": "^2.2.3",
     "foodlink-global": "file:",
+    "leaflet": "^1.9.4",
     "lenis": "^1.3.1"
   }
 }

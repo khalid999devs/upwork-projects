@@ -105,9 +105,9 @@
     <!-- main section -->
     <main class="w-full pb-0 pt-0">
       <div class="w-full">
-        <section class="py-10 pb-16 bg-[var(--light-gray)]">
-          <div class="container mx-auto px-4 mb-5">
-            <div class="grid gap-6 place-items-center">
+        <section class="py-10 w-full bg-[var(--light-gray)]">
+          <div class="w-full px-4 mb-5">
+            <div class="grid container mx-auto gap-6 place-items-center">
               <div class="w-full text-center">
                 <h1
                   class="text-3xl font-semibold relative text-[var(--dark-golden)] inline"
@@ -119,7 +119,7 @@
                 </h1>
               </div>
               <p class="canvas-desc">
-                Pioneering the Future of Experiential Gastronomy in India​
+                Pioneering the Future of Experiential Gastronomy in India
               </p>
               <div
                 class="max-w-[300px] w-full grid grid-cols-2 overflow-hidden toggle-btns-container"
@@ -139,74 +139,37 @@
               </div>
             </div>
 
-            <div
-              class="mt-12 max-w-[900px] p-7 w-full rounded-2xl bg-white map-canvas mx-auto"
+            <!-- <div
+              class="mt-8  md:p-7 rounded-lg bg-white map-canvas mx-auto"
             >
               <div
-                class="rounded-xl border overflow-hidden border-[var(--dark-text)] overflow-hidden"
+                class="rounded-sm border md:border-[var(--dark-text)] "
               >
+              <div class="bg-blue-500 w-fit mx-auto relative map-container">
                 <img
-                  src="images/about/Indian & global footprint/India Footprint map.png"
-                  class="w-full h-full"
-                  alt="Indian Footprint"
-                />
+                src="images/about/footprints/India Footprint map.png"
+                class="w-auto max-h-[80vh] mx-auto"
+                alt="Indian Footprint"
+                height="80vh"
+              />
               </div>
-            </div>
+
+              </div>
+            </div> -->
+            
+            <div id="map" class="min-h-[110vh] 2xl:min-h-[90vh] !bg-[var(--light-gray)] mt-6 w-full mx-auto" style="z-index: 20;"></div>
+            
+            <!-- tooltip -->
+            <div
+            id="map-tooltip"
+            class="fixed top-0 left-0 opacity-0 !z-50 p-3 border-l-2 border-white !bg-[#ffffff] text-[var(--dark-text)] text-sm transition-opacity duration-500 "
+            ></div>
           </div>
         </section>
       </div>
     </main>
 
-    <script type="module">
-      document.addEventListener('DOMContentLoaded', () => {
-        function togglingBtns(toggleBtnsContainerSelector, callback) {
-          const toggleBtnsContainer = document.querySelector(
-            toggleBtnsContainerSelector
-          );
-          const toggleBtns =
-            toggleBtnsContainer.querySelectorAll('.toggle-btn');
-          toggleBtns.forEach((btn) => {
-            btn.addEventListener('click', () => {
-              const activeBtn =
-                toggleBtnsContainer.querySelector('.toggle-btn-active');
-
-              if (!(activeBtn.textContent === btn.textContent)) {
-                if (activeBtn) {
-                  activeBtn.classList.remove('toggle-btn-active');
-                }
-                activeBtn.classList.add('toggle-btn-inactive');
-
-                btn.classList.remove('toggle-btn-inactive');
-                btn.classList.add('toggle-btn-active');
-
-                callback(activeBtn, btn);
-              }
-            });
-          });
-        }
-
-        function ourFootPrintHandling() {
-          togglingBtns('.toggle-btns-container', (activeBtn, currBtn) => {
-            const mapCanvas = document.querySelector('.map-canvas');
-            if (currBtn.dataset.target === 'india') {
-              mapCanvas.querySelector('img').src =
-                'images/about/Indian & global footprint/India Footprint map.png';
-              mapCanvas.querySelector('img').alt = 'Indian footprint map';
-              document.querySelector('.canvas-desc').textContent =
-                'Pioneering the Future of Experiential Gastronomy in India';
-            } else if (currBtn.dataset.target === 'global') {
-              mapCanvas.querySelector('img').src =
-                'images/about/Indian & global footprint/global footprint.png';
-              mapCanvas.querySelector('img').alt = 'Global footprint map';
-              document.querySelector('.canvas-desc').textContent =
-                'Globally Recognized Leader in Experiential Gastronomy';
-            }
-          });
-        }
-
-        ourFootPrintHandling();
-      });
-    </script>
+    <script type="module" src="./scripts/pages/footprints.js"></script>
     <script src="main.js" type="module" defer></script>
   </body>
 </html>
